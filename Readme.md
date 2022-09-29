@@ -1,10 +1,13 @@
 
-<h1 align="center">LeatherHoard Website </h1>
+<h1 align="center">Leather Hoard</h1>
 
-<h3 align="center"> Open Source Website for LeatherHoard built using HTML, CSS, JavaScript and Bootstrap </h3>
+<h2 align="center"> Leather Hoard is an Open Source Website built using HTML, CSS, JavaScript and Bootstrap. </h2>
 
-# <h3>📌Visit Our <a href="https://leatherhoard.netlify.app/" target="_blank">Website</a>💻 
-</h3> 
+The Leather Hoard website is a website for selling leather products. This project is a design template for an online store. Anyone is welcome to add a new feature to this website. _Examples_ include the sign-in page, sign-up page, product list page, product search capabilities, "Buy now" form, send messages functionality, read more/view more functionality, and subscribe functionality.
+
+The aforementioned improvements will make it easier for visitors to browse the website and place online orders for new products. Additionally, it will aid the learners in understanding the fundamental components of an e-commerce website.
+
+Visit the website: [Leather Hoard](https://leatherhoard.netlify.app/)
 
 # <h3> 📌 Tech Stack</h3>
 
@@ -17,13 +20,6 @@
 <h3> 📌 Live Demo of the Website:</h3>
 
 https://user-images.githubusercontent.com/90326051/192001070-e5b69685-9c0a-4c3b-994a-0e5cdf5af577.mp4
-
-
-
-# Contribution is fun! 🧡
-In order to make a hassle-free environment, I implore you all (_while contributing_) to follow the instructions mentioned below!
-
-Happy Submissions :slightly_smiling_face:
 
 
 #
@@ -98,31 +94,39 @@ To start contributing, follow the below guidelines:
 	
 To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
 	
+## Contribution is fun! ❤️
 
+If you have any feedback or suggestions please reach out to me.  
+
+In order to make a hassle-free environment, I implore you all (while contributing) to follow the instructions [Contributing Guidelines](https://github.com/KiranAminPanjwani/LeatherHoard/blob/main/Contributing_Guidlines.md)!
+
+You can create a <a href="https://github.com/KiranAminPanjwani/LeatherHoard/issues">issue</a> and mention there , which new features or extension can make this Project more good.
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<br>
+
+<div align="center">
+
+### Show some ❤️ by starring⭐ this awesome Repository!
+
+</div>
+  
 
 #
 	
+
+<h3 align=center> Project Admin ❤️ </h3>
+
 © 2022 Kiran Amin Panjwani and contributors\
 This project is licensed under the [**MIT license**](https://github.com/KiranAminPanjwani/LeatherHoard/blob/main/LICENSE).
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+<a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-red?style=for-the-badge" align="right"/></a>
 
-<h2 align=center> Project Admin ❤️ </h2>
 <p align="center">
 <table align="center">
   <tbody><tr>
      <td align="center"><a href="https://github.com/KiranAminPanjwani"><img alt="" src="https://user-images.githubusercontent.com/90326051/192037521-3d5fa306-f642-4ae1-a53c-2054f40e2975.png" width="125px;"><br><sub><b> Kiran Panjwani </b></sub></a><br></td> </a></td>
-
 </tbody></table>
 
-
-<h2>📬 Contact</h2>
-
-If you want to contact me, you can reach me through below handles.
-<div align="center">
-
-<a  href="https://www.linkedin.com/in/kiranpanjwani220/" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://twitter.com/kiranpanjwani7" target="_blank"><img src="https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white&alt=twitter" /></a>
-<a href="mailto:kiranpanjwani220@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-
-</div>
