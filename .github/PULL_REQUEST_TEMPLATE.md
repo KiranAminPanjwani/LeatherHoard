@@ -21,6 +21,7 @@
 - [ ] My code follows the code style of this project.
 - [ ] This PR does not contain plagiarized content.
 - [ ] The title of my pull request is a short description of the requested changes.
+- [ ] I am a participant of Hacktoberfest 2022.
 
 ## 📄 Note to reviewers
 
