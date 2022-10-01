@@ -8,7 +8,7 @@
     /* border: 5px solid rgb(13, 13, 13); */
     border-radius: 10px;
     background: #fff;
-    width: 350px;
+    width: 300px;
     height: 450px;
     margin: 0 150px;
     text-align: center;
@@ -75,12 +75,13 @@ form a{
     font-size: 12px;
 }
 #Indicator{
-    width: 100px;
+    width: 80px;
     border:none;
     background:#64362f;
     height: 3px;
-    margin: 9px;
-    transform:translateX(100px);
+    margin-left: 5px;
+    margin-top: -5px;
+    transform: translateX(110px);
     transition: transform 1s;
 
 }
