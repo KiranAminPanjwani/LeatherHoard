@@ -180,24 +180,101 @@ button {
 .loader_bg {
   position: fixed;
   z-index: 9999999;
-  background: #fff;
+  background: white;
   width: 100%;
   height: 100%;
-}
-
-.loader {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.loader img {
-  width: 280px;
+.loader-wrapper {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.loader-circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #a52a2a;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 0.5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.loader-circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.loader-circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+.loader-shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #a52a2a;
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 0.5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+
+.loader-shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.loader-shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
 }
 
 ul.btn {
@@ -750,6 +827,9 @@ Style For Contact Us section
   top: 0;
   width: 100%;
   height: 100%;
+
+  content: "";
+
   content: "";
 }
 
@@ -885,6 +965,21 @@ Style For Contact Us section
 .contact-icon {
   margin-top: 19px;
 }
+
+.contact-icon ul li {
+  float: left;
+}
+.contact-icon ul li > a {
+  color: #fff;
+  margin-right: 13px;
+  padding: 0px 12px 0px 0px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .contact-icon ul li {
   float: left;
 }
@@ -892,6 +987,8 @@ Style For Contact Us section
   color: #ff8aa5;
   margin-right: 13px;
   padding: 0px 29px 0px 0px;
+
+  padding: 0px 12px 0px 0px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -1078,4 +1175,19 @@ Style For page-section
   height: 3px;
   border-radius: 40px;
   background-color: #ff8aa5;
+}
+
+/* Adding custom scroolbar  matching to the theme of website */
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(247, 252, 254);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #624a2e;
+  border-radius: 1rem;
+  border: 0.3rem solid transparent;
+  background-clip: content-box;
 }
