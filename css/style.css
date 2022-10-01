@@ -200,7 +200,7 @@ button {
   height: 20px;
   position: absolute;
   border-radius: 50%;
-  background-color: #ff4a4a;
+  background-color: #a52a2a;
   left: 15%;
   transform-origin: 50%;
   animation: circle7124 0.5s alternate infinite ease;
@@ -240,7 +240,7 @@ button {
   width: 20px;
   height: 4px;
   border-radius: 50%;
-  background-color: #ff4a4a;
+  background-color: #a52a2a;
   position: absolute;
   top: 62px;
   transform-origin: 50%;
