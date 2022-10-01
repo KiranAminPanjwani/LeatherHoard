@@ -962,6 +962,7 @@ Style For Contact Us section
 .contact-icon {
   margin-top: 19px;
 }
+
 .contact-icon ul li {
   float: left;
 }
@@ -974,6 +975,18 @@ Style For Contact Us section
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  
+.contact-icon ul li{float:left;}
+.contact-icon ul li>a {
+color:#ff8aa5;
+margin-right:13px;
+padding: 0px 12px 0px 0px;
+-webkit-transition: .3s; 
+-moz-transition:.3s; 
+-ms-transition:.3s; 
+-o-transition:.3s;
+  transition: .3s;
+
 }
 
 /* ------------------------------------
