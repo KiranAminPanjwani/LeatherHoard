@@ -11,19 +11,6 @@
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
 
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
-@import url(animate.min.css);
-@import url(normalize.css);
-@import url(icomoon.css);
-@import url(font-awesome.min.css);
-@import url(meanmenu.css);
-@import url(owl.carousel.min.css);
-@import url(swiper.min.css);
-@import url(slick.css);
-@import url(jquery.fancybox.min.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -41,6 +28,7 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.80857;
   font-weight: normal;
+  background-color: var(--primary-background-color);
 }
 
 a {
@@ -133,7 +121,7 @@ p {
 }
 
 a {
-  color: #222222;
+  color: var(--color-dark-1);
   text-decoration: none;
   outline: none !important;
 }
@@ -187,7 +175,7 @@ button {
 .loader_bg {
   position: fixed;
   z-index: 9999999;
-  background: #fff;
+  background: var(--primary-background-color);
   width: 100%;
   height: 100%;
 }
@@ -279,14 +267,14 @@ Style For Header section
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
 .navigation.navbar-dark .navbar-nav .nav-link:hover {
-  color: #ff8aa5;
+  color: var(--color-pink);
 }
 
 .navigation.navbar-dark .navbar-nav .active > .nav-link,
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
 .navigation.navbar-dark .navbar-nav .show > .nav-link {
-  color: #ff8aa5;
+  color: var(--color-pink);
 }
 
 .navbar-expand-md .navbar-nav {
@@ -417,7 +405,7 @@ Style For The Background Text in Banner
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  background: #ff8aa5;
+  background: var(--color-pink);
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -460,7 +448,7 @@ Style For Banner section Buttons
   transition: ease-in all 0.5s;
 }
 
-/* colors_used: #ff8aa5, #de5a5a (dark pink), 361C16 (brown)*/
+/* colors_used: var(--color-pink), #de5a5a (dark pink), 361C16 (brown)*/
 
 /* -------------------------------------
 =====================================
@@ -489,9 +477,10 @@ Style For Card-service Section
   padding: 32px 20px;
   max-width: 300px;
   text-align: center;
-  color: #898798;
+  color: var(--text-color);
   border-radius: 8px;
   box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+  background: var(--secondary-background-color);
 }
 
 /* ------------------------------------------------
@@ -528,7 +517,7 @@ Style For Categories Section
 
 .first-cat {
   background: url(/images/Leather-purse.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .second-cat {
@@ -572,6 +561,10 @@ Style For Categories Section
   color: #2d2b3a;
 }
 
+.dark-mode .categories h5 {
+  color: var(--color-dark-1);
+}
+
 .categories p {
   font-size: 13px;
   color: #898798;
@@ -588,12 +581,8 @@ Style For About Us Section
 
 -------------------------- */
 
-#about{
-  background-color: white;
-}
-
 .aboutusbtn{
-  background-color: #ff8aa5;
+  background-color: var(--color-pink);
   color: white;
   font-weight: 400;
 }
@@ -604,16 +593,18 @@ Style For New Arrivals Section
 
 -------------------------- */
 #arrivals{
-  background-color: #f8f9fa!important;
+  background-color: var(--secondary-background-color);
   
 }
 .arrival-card {
   display: block;
   margin: 0 auto;
+  padding: 1rem;
   max-width: 280px;
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(100, 95, 136, 0.16);
   overflow: hidden;
+  background: var(--secondary-background-color);
 }
 
 .arrival-card .arrival_picture {
@@ -622,9 +613,11 @@ Style For New Arrivals Section
   margin-bottom: 10px;
   width: 100%;
   height: 200px;
-  /* overflow: hidden; */
 }
 
+.arrival-card .arrival_picture img {
+  border-radius: 4px;
+}
 
 .arrival-card .bodycont {
   padding: 10px 10px;
@@ -653,12 +646,12 @@ Style For Customer Review section
 
 .titlepage h2 {
   font-size: 40px;
-  color: #090807;
+  color: var(--color-dark-1);
   line-height: 55px;
   font-weight: bold;
   padding: 0;
   text-transform: uppercase;
-  border-bottom: #ff8aa5 solid 1px;
+  border-bottom: var(--color-pink) solid 1px;
   max-width: 315px;
   margin: auto;
 }
@@ -693,7 +686,6 @@ Style For Customer Review section
 
 .customer {
   padding: 90px 0px 140px 0px;
-  background: #fff;
 }
 
 .customer .titlepage h2 {
@@ -715,7 +707,7 @@ Style For Customer Review section
 
 .customer_Carousel .test_box h4 {
   font-size: 30px;
-  color: #030305;
+  color: var(--color-dark-1);
   line-height: 28px;
   display: block;
   font-weight: 600;
@@ -726,8 +718,16 @@ Style For Customer Review section
 .customer_Carousel .test_box p {
   font-size: 17px;
   line-height: 28px;
-  color: #0b0b0c;
+  color: var(--color-dark-2);
   text-align: left;
+}
+
+.dark-mode .customer_Carousel .test_box p {
+  color: var(--text-color);
+}
+
+.dark-mode .customer-review-quote {
+  filter: invert(1);
 }
 
 .customer_Carousel .carousel-indicators {
@@ -740,7 +740,7 @@ Style For Customer Review section
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  background: #ff8aa5;
+  background: var(--color-pink);
 }
 
 .customer_Carousel .carousel-indicators li.active {
@@ -830,7 +830,7 @@ resize: none;
 display:flex;
 align-items:center;
 justify-content:center;
-background: #ff8aa5;
+background: var(--color-pink);
 border-radius: 6px !important;
 height:50px;
 width: 195px;
@@ -992,7 +992,7 @@ ul.social_icon li a {
 }
 
 ul.social_icon li a:hover {
-  background-color: #fb8da7;
+  background-color: var(--color-pink-dark);
   color: #fff;
 }
 
@@ -1010,9 +1010,9 @@ ul.social_icon li a:hover {
      color: rgb(176, 173, 173);
 }
 
-.footer li:hover, .footer li  a:hover{
+/* .footer li:hover, .footer li  a:hover{
   text-decoration: underline;
-}
+} */
 
 
 .bottom_form .enter {
@@ -1032,7 +1032,7 @@ ul.social_icon li a:hover {
 .sub_btn {
   font-size: 17px;
   transition: ease-in all 0.5s;
-  background-color: #fb8da7;
+  background-color: var(--color-pink-dark);
   color: #fff;
   padding: 5px 0px;
   max-width: 147px;
@@ -1070,7 +1070,7 @@ ul.social_icon li a:hover {
 }
 
 .copyright a:hover {
-  color: #fb8da7;
+  color: var(--color-pink-dark);
 }
 
 /* ------------------------------------
@@ -1112,6 +1112,39 @@ Style For page-section
   width: 32px;
   height: 3px;
   border-radius: 40px;
-  background-color: #ff8aa5;
+  background-color: var(--color-pink);
 }
 
+
+/* ---------------------------
+
+Style for toggle theme button
+
+-------------------------- */
+
+.toggle-theme-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--color-dark-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px 2px rgba(100, 95, 136, 0.62);
+  z-index: 1;
+}
+
+.toggle-theme-btn i {
+  font-size: 2rem;
+  color: var(--color-pink);
+  display: none;
+}
+
+.dark-mode .toggle-theme-btn i:first-child,
+.light-mode .toggle-theme-btn i:last-child {
+  display: block;
+}
