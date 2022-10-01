@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .modal-buy .product{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .modal-buy .product img{
+        width: 70vw;
+        margin: 30px;
+    }
+}
