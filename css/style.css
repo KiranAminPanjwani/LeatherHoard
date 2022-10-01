@@ -2,10 +2,10 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap');
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -38,7 +38,7 @@ html {
 body {
   color: #666666;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.80857;
   font-weight: normal;
 }
@@ -158,15 +158,10 @@ img {
   outline: 0;
 }
 
-
-
-
 .form-control:focus {
   border-color: #ffffff !important;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
-
-
 
 blockquote {
   margin: 20px 0 20px;
@@ -180,31 +175,106 @@ button {
   cursor: pointer;
 }
 
-
-
 /*---------------------------- preloader area ----------------------------*/
 
 .loader_bg {
   position: fixed;
   z-index: 9999999;
-  background: #fff;
+  background: white;
   width: 100%;
   height: 100%;
-}
-
-.loader {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.loader img {
-  width: 280px;
+.loader-wrapper {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.loader-circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff4a4a;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 0.5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.loader-circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.loader-circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+
+.loader-shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ff4a4a;
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 0.5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+
+.loader-shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+
+.loader-shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
 }
 
 ul.btn {
@@ -247,7 +317,6 @@ ul.btn li:last-child {
 ==================================================
 -------------------------------------------------- */
 
-
 /* ---------------------------
 
 Style For Header section
@@ -255,13 +324,11 @@ Style For Header section
 -------------------------- */
 
 .full {
-
   width: 100%;
   float: left;
   margin: 0;
   padding: 0;
 }
-
 
 .navigation.navbar {
   float: right;
@@ -292,7 +359,6 @@ Style For Header section
 .navbar-expand-md .navbar-nav {
   padding-right: 10px;
 }
-
 
 .header {
   width: 100%;
@@ -330,7 +396,7 @@ Style For Banner section
 }
 .banner_main::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 50px;
   height: 40px;
   background: url(../images/cross.png);
@@ -340,7 +406,7 @@ Style For Banner section
 }
 .banner_main::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 50px;
   height: 40px;
   background: url(../images/cross.png);
@@ -431,7 +497,6 @@ Style For The Background Text in Banner
   display: none;
 }
 
-
 /* ---------------------------
 
 Style For Banner section Buttons
@@ -466,22 +531,18 @@ Style For Banner section Buttons
 =====================================
 ------------------------------------- */
 
-
-
-
 /* ---------------------------
 
 Style For Card-service Section
 
 -------------------------- */
 
-.service_img{
+.service_img {
   margin-bottom: 10px;
 }
-.service_img .img{
+.service_img .img {
   width: 100%;
   height: 100%;
-
 }
 .card-service {
   display: block;
@@ -497,8 +558,6 @@ Style For Card-service Section
 /* ------------------------------------------------
 ===============================================
 ------------------------------------------------ */
-
-
 
 /* ---------------------------
 
@@ -562,8 +621,7 @@ Style For Categories Section
   background-size: cover;
 }
 .eighth-cat {
-  background: url(/images/Leather-caps.jpeg
-  );
+  background: url(/images/Leather-caps.jpeg);
   background-repeat: none;
   background-size: cover;
 }
@@ -581,18 +639,17 @@ Style For Categories Section
 ======================================
 -------------------------------------- */
 
-
 /* ---------------------------
 
 Style For About Us Section
 
 -------------------------- */
 
-#about{
+#about {
   background-color: white;
 }
 
-.aboutusbtn{
+.aboutusbtn {
   background-color: #ff8aa5;
   color: white;
   font-weight: 400;
@@ -603,9 +660,8 @@ Style For About Us Section
 Style For New Arrivals Section
 
 -------------------------- */
-#arrivals{
-  background-color: #f8f9fa!important;
-  
+#arrivals {
+  background-color: #f8f9fa !important;
 }
 .arrival-card {
   display: block;
@@ -625,21 +681,19 @@ Style For New Arrivals Section
   /* overflow: hidden; */
 }
 
-
 .arrival-card .bodycont {
   padding: 10px 10px;
   text-align: center;
 }
 
 .arrival-card .arrival-title a {
-  color: #645F88;
-  transition: color .2s ease;
+  color: #645f88;
+  transition: color 0.2s ease;
 }
 
 /* ------------------------------------
 ====================================
 ------------------------------------ */
-
 
 /* ---------------------------
 
@@ -669,7 +723,6 @@ Style For Customer Review section
   flex-wrap: wrap;
 }
 
-
 .read_more {
   font-size: 17px;
   background-color: #fe7696;
@@ -688,8 +741,6 @@ Style For Customer Review section
   color: #fff;
   transition: ease-in all 0.5s;
 }
-
-
 
 .customer {
   padding: 90px 0px 140px 0px;
@@ -756,8 +807,6 @@ Style For Customer Review section
 ===============================================
 ----------------------------------------------- */
 
-
-
 /* ---------------------------
 
 Style For Contact Us section
@@ -765,105 +814,101 @@ Style For Contact Us section
 -------------------------- */
 .contact {
   padding: 115px 0 120px;
-  background:url(/images/map.jpg);
+  background: url(/images/map.jpg);
   background-repeat: no-repeat;
-background-position:center;
-background-size: cover;
-position: relative;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-.contact:before{
-background:#482b24e7;
-position:absolute;
-left:0;
-top:0;
-width:100%;
-height:100%;
-content:'';
+.contact:before {
+  background: #482b24e7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
 }
 
 /*contact-head */
 .section-header.contact-head h2,
-.section-header.contact-head p{
-position: relative;
-color: #fff;
+.section-header.contact-head p {
+  position: relative;
+  color: #fff;
 }
-.contact-form h3{
-color: #fff;
-font-size: 24px;
-text-transform:capitalize;
-margin-bottom:40px;
+.contact-form h3 {
+  color: #fff;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
 }
 /*contact-head */
 
 .contact-content {
   padding: 0 0 0 0;
-margin-top: 30px;
-overflow:hidden;
+  margin-top: 30px;
+  overflow: hidden;
 }
 .contact-form {
-position: relative;
-margin: 50px 0 0 0;
-
-}
-.contact-form  .form-group {
-  margin-bottom: 15px;
-
-}
-.contact-form .form-control {
-padding: 24px 21px;
-font-size: 16px;
-border: 1px solid #f9faff;
-  border-radius: 0px;
-  box-shadow: none;
-outline:0!important;
-  background:#f9faff;
-  color: #888;
-resize: none;
-
+  position: relative;
+  margin: 50px 0 0 0;
 }
 .contact-form .form-group {
-  padding-bottom:7px;
+  margin-bottom: 15px;
+}
+.contact-form .form-control {
+  padding: 24px 21px;
+  font-size: 16px;
+  border: 1px solid #f9faff;
+  border-radius: 0px;
+  box-shadow: none;
+  outline: 0 !important;
+  background: #f9faff;
+  color: #888;
+  resize: none;
+}
+.contact-form .form-group {
+  padding-bottom: 7px;
 }
 
 /*--contct button--*/
-.contact-form .single-contact-btn button{
-display:flex;
-align-items:center;
-justify-content:center;
-background: #ff8aa5;
-border-radius: 6px !important;
-height:50px;
-width: 195px;
-border:1px solid #482b24;
-text-transform:capitalize;
-margin-top: 3px;
--webkit-transition: .5s; 
--moz-transition:.5s; 
--ms-transition:.5s; 
--o-transition:.5s;
-  transition: .5s;
+.contact-form .single-contact-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff8aa5;
+  border-radius: 6px !important;
+  height: 50px;
+  width: 195px;
+  border: 1px solid #482b24;
+  text-transform: capitalize;
+  margin-top: 3px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
-.contact-form .single-contact-btn button.contact-btn ,
+.contact-form .single-contact-btn button.contact-btn,
 .contact-form .single-contact-btn button.contact-btn:focus {
-  margin-top:0px;
+  margin-top: 0px;
   outline: 0 !important;
-  border:0;
+  border: 0;
   color: #fff;
   letter-spacing: 2.5px;
   border-radius: 0px;
-  font-size:14px;
--webkit-transition: .5s; 
--moz-transition:.5s; 
--ms-transition:.5s; 
--o-transition:.5s;
-  transition: .5s;
-
+  font-size: 14px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .single-contact-btn:hover button.contact-btn {
-color:white;
-background:#000;
-border:1px solid #361c16;
+  color: white;
+  background: #000;
+  border: 1px solid #361c16;
 }
 
 /*--contct button--*/
@@ -876,66 +921,64 @@ border:1px solid #361c16;
 /* contact-adress */
 .contact-adress {
   margin: 68px 0 0px;
-display:flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .contact-office-address {
   margin-bottom: 18px;
 }
-.contact-office-address h3{
-color: #fff;
-font-size: 24px;
-text-transform:capitalize;
+.contact-office-address h3 {
+  color: #fff;
+  font-size: 24px;
+  text-transform: capitalize;
 }
-.contact-office-address p{
-color: #fff;
-font-size: 14px;
-margin-bottom: 14px;
-margin-top: 30px;
-margin-bottom: 50px;
+.contact-office-address p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 14px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
-.contact-online-address{
-color:#fff;
-font-size: 14px;
+.contact-online-address {
+  color: #fff;
+  font-size: 14px;
 }
 .single-online-address {
-position:relative;
-margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
 .single-online-address i {
   padding-right: 7px;
 }
-.single-online-address span{
-position:absolute;
-font-size: 14px;
-left:25px;
-top:0;
-width:100%;
-}/* contact-adress */
+.single-online-address span {
+  position: absolute;
+  font-size: 14px;
+  left: 25px;
+  top: 0;
+  width: 100%;
+} /* contact-adress */
 
 /*hm-foot-icon*/
 .contact-icon {
-  margin-top:19px;
+  margin-top: 19px;
 }
-.contact-icon ul li{float:left;}
-.contact-icon ul li>a {
-color: #fff;
-margin-right:13px;
-padding: 0px 12px 0px 0px;
--webkit-transition: .3s; 
--moz-transition:.3s; 
--ms-transition:.3s; 
--o-transition:.3s;
-  transition: .3s;
-
+.contact-icon ul li {
+  float: left;
+}
+.contact-icon ul li > a {
+  color: #fff;
+  margin-right: 13px;
+  padding: 0px 12px 0px 0px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /* ------------------------------------
 ====================================
 ------------------------------------ */
-
-
-
 
 /* ---------------------------
 
@@ -1004,16 +1047,17 @@ ul.social_icon li a:hover {
   padding-bottom: 15px;
 }
 
-.footer li, .footer li  a{
-     text-align: left;
-     margin-bottom: 12px;
-     color: rgb(176, 173, 173);
+.footer li,
+.footer li a {
+  text-align: left;
+  margin-bottom: 12px;
+  color: rgb(176, 173, 173);
 }
 
-.footer li:hover, .footer li  a:hover{
+.footer li:hover,
+.footer li a:hover {
   text-decoration: underline;
 }
-
 
 .bottom_form .enter {
   border: inherit;
@@ -1077,8 +1121,6 @@ ul.social_icon li a:hover {
 ====================================
 ------------------------------------ */
 
-
-
 /* ---------------------------
 
 Style For page-section
@@ -1114,4 +1156,3 @@ Style For page-section
   border-radius: 40px;
   background-color: #ff8aa5;
 }
-
