@@ -1,0 +1,166 @@
+/* ..........imports for utility styles ............*/
+@import url(./utils.css);
+
+/* .........styling the loder .......*/
+.loder{
+  height: 100vh;
+  position: fixed;
+  z-index: 10000 !important;
+  width: 100%;
+  background-color: white;
+}
+.loder img{
+  height: 50vh;
+}
+/*................ styleing the modal ........ */
+.modal-buy{
+  position: fixed;
+  z-index: 1000 !important;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  scale: 0;
+  transition: 0.5s ease-in-out;
+}
+.modal-buy .cancelBuy{
+  width: 100%;
+  text-align: right;
+  padding-right: 30px;
+  padding-top:30px;
+}
+.modal-buy .product{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+.modal-buy .product img{
+  width: 40vw;
+}
+/* for dynamically genered calass test in product .js */
+.modal-buy .product .productBuyDescription p{
+  width: 50vw;
+  font-size: 22px;
+}
+.modal-buy .product .productBuyDescription .price{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.modal-buy .product .productBuyDescription select{
+  padding: 10px;
+  padding-right: 30px !important;
+  margin-right: 30px;
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(255, 238, 241);
+  margin-bottom: 30px;
+}
+.modal-buy .product .productBuyDescription input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid pink;
+  background-color: rgb(255, 238, 241);
+  font-weight: bold;
+  color: black;
+}
+/* dynamically generated class style end */
+.active-modal{
+  scale: 1;
+}
+/* ...............styleing the header  .................  */
+header {
+  background-image: url(../images/banner4.png);
+  height: 60vh;
+}
+
+
+/* ...............styleing the Main body starts.................  */
+main {
+  transform: translateY(-30vh);
+  position: relative;
+  z-index: 200;
+  padding: 30px;
+}
+.products-holder{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    font-size: 13px;
+    line-height: 12px;
+    justify-content: center;
+}
+.products_card_l {
+  height: 380px;
+  width: 255px;
+  background-color: white;
+  line-height: 20px;
+  border: 2px solid rgba(128, 128, 128, 0.104);
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.products_card_l:hover{
+    transform: translateY(-10px);
+    scale: 1.05;
+}
+.products_card_l .product_img,
+.products_card_l .product_img img {
+  height: 280px;
+  width: 240px;
+  margin: auto;
+}
+.products_card_l .product_img img {
+  padding: 10px;
+  border-radius: 15px;
+  padding-top: 0px;
+  margin-top: -25px;
+}
+.products_card_l .product_img i {
+  position: relative;
+  z-index: 200;
+  top: 10px;
+}
+.products_card_l .product_img i img{
+  height: 32px;
+  width: 32px;
+  padding: 0px !important ;
+  float: right;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+.products_card_l .product_img i img:hover {
+  animation: siver 0.3s ease-in-out 1;
+}
+@keyframes siver {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(30deg);
+  }
+  40% {
+    transform: rotateZ(10deg);
+  }
+  40% {
+    transform: rotateZ(40deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.products_card_l .product_details {
+  font-size: 15px;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+.products_card_l .product_details .price{
+    color: black;
+}
+/* ...............styleing the Main body starts.................  */
