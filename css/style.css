@@ -1171,3 +1171,23 @@ Style For page-section
   border-radius: 40px;
   background-color: #ff8aa5;
 }
+
+
+
+/* Adding custom scroolbar  matching to the theme of website */
+::-webkit-scrollbar{
+  width: 20px
+}
+::-webkit-scrollbar-track{
+background-color: rgb(247, 252, 254);
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:#624a2e;
+  border-radius: 1rem;
+  border:.3rem solid transparent;
+  background-clip: content-box;
+}
+
+
