@@ -1,21 +1,27 @@
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
 
-
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
 @media (min-width: 1200px) and (max-width: 1342px) {
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 0px 20px;
     }
+    .banner-img {
+        width: 620px;
+        height: 447px;
+    }
     .text-bg span {
         font-size: 41px;
     }
-    
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .navigation.navbar-dark .navbar-nav .nav-link {
         padding: 0px 11px;
+    }
+    .banner-img {
+        width: 516px;
+        height: 372px;
     }
     .text-bg h1 {
         font-size: 56px;
@@ -44,6 +50,14 @@
     .banner_main {
         min-height: 705px;
     }
+    .banner-img {
+        width: 404px;
+        height: 290px;
+    }
+    .about-img {
+        height: 600px;
+        width: 100%;
+    }
     .text-bg h1 {
         font-size: 40px;
         line-height: 65px;
@@ -60,7 +74,7 @@
     .d_none {
         display: none;
     }
-    
+
     .box_text p {
         font-size: 15px;
         line-height: 23px;
@@ -89,6 +103,10 @@
     }
     .text_img {
         margin-right: 0px;
+    }
+    .banner-img {
+        width: 510px;
+        height: 367px;
     }
     #banner1 .carousel-indicators {
         bottom: -40px;
@@ -142,10 +160,10 @@
     .navigation.navbar-dark .navbar-nav .nav-link:hover {
         color: #fff;
     }
-    .navigation.navbar-dark .navbar-nav .active>.nav-link,
+    .navigation.navbar-dark .navbar-nav .active > .nav-link,
     .navigation.navbar-dark .navbar-nav .nav-link.active,
     .navigation.navbar-dark .navbar-nav .nav-link.show,
-    .navigation.navbar-dark .navbar-nav .show>.nav-link {
+    .navigation.navbar-dark .navbar-nav .show > .nav-link {
         color: #fff;
     }
     .navigation.navbar-dark .navbar-toggler {
@@ -174,12 +192,20 @@
     #banner1 .carousel-inner {
         padding-right: 0;
     }
+    .about-img {
+        height: 350px;
+        width: 100%;
+    }
     .text_img {
         margin-right: 0px;
         margin-top: 30px;
     }
     #banner1 .carousel-indicators {
         bottom: -40px;
+    }
+    .banner-img {
+        width: 320px;
+        height: 230px;
     }
     .text-bg h1 {
         font-size: 47px;
@@ -201,7 +227,7 @@
         font-size: 28px;
         line-height: 40px;
     }
-    
+
     .titlepage h2 {
         font-size: 30px;
     }
@@ -237,10 +263,10 @@
     .navigation.navbar-dark .navbar-nav .nav-link:hover {
         color: #fff;
     }
-    .navigation.navbar-dark .navbar-nav .active>.nav-link,
+    .navigation.navbar-dark .navbar-nav .active > .nav-link,
     .navigation.navbar-dark .navbar-nav .nav-link.active,
     .navigation.navbar-dark .navbar-nav .nav-link.show,
-    .navigation.navbar-dark .navbar-nav .show>.nav-link {
+    .navigation.navbar-dark .navbar-nav .show > .nav-link {
         color: #fff;
     }
     .navigation.navbar-dark .navbar-toggler {
@@ -259,4 +285,3 @@
         display: none;
     }
 }
-
