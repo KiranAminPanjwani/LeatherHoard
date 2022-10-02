@@ -2,13 +2,16 @@
 
 ## 🛠️ Fixes Issue
 
+<!-- Mention the issue number you have fixed. 
+Example: 🛠️ Fixes Issue #31 -->
+
 <!-- Remove this section if not applicable -->
 
-<!-- Example: Closes #31 -->
+
 
 ## 👨‍💻 Changes proposed
 
-<!-- List all the proposed changes in your PR -->
+<!-- List all the changes you have made in the project -->
 
 ## ✔️ Check List (Check all the applicable boxes) <!-- Follow the below conventions to check the box -->
 
