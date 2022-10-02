@@ -136,11 +136,6 @@ a,
     transition: all 0.3s ease-in-out;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 :focus {
     outline: 0;
 }
@@ -450,21 +445,8 @@ Style For The Background Text in Banner
     display: block;
 }
 
-.text-bg figure img {
-    width: 100%;
-    padding-top: 70px;
-}
-
 .text_img {
     margin-right: -130px;
-}
-
-.text_img figure {
-    margin: 0;
-}
-
-.text_img figure img {
-    width: 100%;
 }
 
 .carousel-caption {
@@ -496,6 +478,23 @@ Style For The Background Text in Banner
 #banner1 a.carousel-control-next,
 #banner1 a.carousel-control-prev {
     display: none;
+}
+
+/* 
+Styles for Banner image  
+*/
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* ---------------------------
@@ -541,10 +540,7 @@ Style For Card-service Section
 .service_img {
     margin-bottom: 10px;
 }
-.service_img .img {
-    width: 100%;
-    height: 100%;
-}
+
 .card-service {
     display: block;
     margin: 16px auto;
