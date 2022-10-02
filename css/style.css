@@ -1134,6 +1134,8 @@ ul.social_icon li a {
     border-radius: 30px;
     margin: 0 3px;
     transition: 0s;
+    transition: all 400ms ease;
+
 }
 
 ul.social_icon li a:hover {
@@ -1212,6 +1214,8 @@ ul.social_icon li a:hover {
 
 .copyright a:hover {
     color: var(--color-pink-dark);
+    transition: all 400ms ease;
+
 }
 
 /* ------------------------------------
