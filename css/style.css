@@ -11,7 +11,6 @@
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
 
-
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -264,6 +263,19 @@ button {
   left: auto;
   right: 15%;
   animation-delay: 0.3s;
+}
+
+/*---------------------------- Scroll progress bar ----------------------------*/
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+  width: 0;
+  z-index: 1000;
+  transition: width 0.2s ease-out;
 }
 
 ul.btn {
@@ -639,9 +651,8 @@ Style For About Us Section
 
 -------------------------- */
 
-
 /* Added background using css variables instead of using hardcoded value */
-.aboutusbtn{
+.aboutusbtn {
   background-color: var(--color-pink);
   color: white;
   font-weight: 400;
@@ -653,7 +664,7 @@ Style For New Arrivals Section
 
 -------------------------- */
 /* Added background using css variables instead of using hardcoded value */
-#arrivals{
+#arrivals {
   background-color: var(--secondary-background-color);
 }
 .arrival-card {
@@ -877,22 +888,22 @@ Style For Contact Us section
 }
 
 /*--contct button--*/
-.contact-form .single-contact-btn button{
-display:flex;
-align-items:center;
-justify-content:center;
-background: var(--color-pink);
-border-radius: 6px !important;
-height:50px;
-width: 195px;
-border:1px solid #482b24;
-text-transform:capitalize;
-margin-top: 3px;
--webkit-transition: .5s; 
--moz-transition:.5s; 
--ms-transition:.5s; 
--o-transition:.5s;
-  transition: .5s;
+.contact-form .single-contact-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-pink);
+  border-radius: 6px !important;
+  height: 50px;
+  width: 195px;
+  border: 1px solid #482b24;
+  text-transform: capitalize;
+  margin-top: 3px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .contact-form .single-contact-btn button.contact-btn,
@@ -1173,7 +1184,6 @@ Style For page-section
   background-color: var(--color-pink);
 }
 
-
 /* ---------------------------
 
 Style for toggle theme button
@@ -1196,7 +1206,6 @@ Style for toggle theme button
   z-index: 1;
 }
 
-
 .toggle-theme-btn i {
   font-size: 2rem;
   color: var(--color-pink);
@@ -1209,16 +1218,16 @@ Style for toggle theme button
 }
 
 /* Adding custom scroolbar  matching to the theme of website */
-::-webkit-scrollbar{
-  width: 20px
+::-webkit-scrollbar {
+  width: 20px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: rgb(247, 252, 254);
 }
 
-::-webkit-scrollbar-thumb{
-  background-color:#624a2e;
+::-webkit-scrollbar-thumb {
+  background-color: #624a2e;
   border-radius: 1rem;
-  border:.3rem solid transparent;
+  border: 0.3rem solid transparent;
   background-clip: content-box;
 }
