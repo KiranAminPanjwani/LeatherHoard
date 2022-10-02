@@ -5,14 +5,14 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Description
+      label: 🎇 Description
       description: A brief description of the question or issue, also include what you tried and what didn't work
     validations:
       required: true
   - type: textarea
     id: screenshots
     attributes:
-      label: Screenshots
+      label: 🖼 Screenshots
       description: Please add screenshots if applicable
     validations:
       required: false
