@@ -88,8 +88,17 @@
                            <li class="nav-item">
                               <a class="nav-link" href="#ContactUs">Contact Us</a>
                            </li>
-                           <li class="nav-item d_none">
-                              <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                           <li class="nav-item d_none" >
+                              <i class="fa fa-search nav-link" aria-hidden="true" id="search-button"></i>
+                              <div class="searchBox">
+                                 <div class="searchInputBox">
+                                    <input type="search" name="search" id="searchInput">
+                                 </div>
+                                 <div class="suggestionBox">
+                                    <div>this </div>
+                                    <div>that </div>
+                                 </div>
+                              </div>
                            </li>
                            <li class="nav-item d_none">
                               <a class="nav-link" href="login.html">Login</a>
@@ -807,7 +816,13 @@
    <script src="./js/jquery.min.js"></script>
    <script src="./js/bootstrap.bundle.min.js"></script>
    <!-- sidebar -->
+
    <script src="./js/custom.js"></script>
+
+   <!-- reiquired js for the page  -->
+   <script src="./js/searchSuggestions.js"> </script>
+   <script src="./js/index.js"></script>
+
 </body>
 
 </html>
