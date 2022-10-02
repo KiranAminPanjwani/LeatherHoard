@@ -54,6 +54,10 @@
         width: 404px;
         height: 290px;
     }
+    .about-img {
+        height: 600px;
+        width: 100%;
+    }
     .text-bg h1 {
         font-size: 40px;
         line-height: 65px;
@@ -187,6 +191,10 @@
     }
     #banner1 .carousel-inner {
         padding-right: 0;
+    }
+    .about-img {
+        height: 350px;
+        width: 100%;
     }
     .text_img {
         margin-right: 0px;

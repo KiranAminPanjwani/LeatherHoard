@@ -372,6 +372,11 @@ Style For Header section
     line-height: 40px;
 }
 
+.logo a img {
+    width: 131px;
+    height: 76px;
+}
+
 /* ---------------------------
 
 Style For Banner section
@@ -538,7 +543,15 @@ Style For Card-service Section
 -------------------------- */
 
 .service_img {
-    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px auto;
+}
+
+.service_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .card-service {
@@ -652,6 +665,17 @@ Style For About Us Section
     background-color: var(--color-pink);
     color: white;
     font-weight: 400;
+}
+
+.about-img {
+    height: 473px;
+    width: 100%;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* ---------------------------
