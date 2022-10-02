@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  color: #666666;
+  color: var(--grey-color-1);
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   line-height: 1.80857;
@@ -32,7 +32,7 @@ body {
 }
 
 a {
-  color: #1f1f1f;
+  color: var(--black-color-1);
   text-decoration: none !important;
   outline: none !important;
   -webkit-transition: all 0.3s ease-in-out;
@@ -54,7 +54,7 @@ h6 {
   padding: 0 0 10px 0;
   font-weight: normal;
   line-height: normal;
-  color: #111111;
+  color: var(--black-color-2);
   margin: 0;
 }
 
@@ -96,7 +96,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #212121;
+  color: var(--black-color-3);
   text-decoration: none !important;
   opacity: 1;
 }
@@ -147,8 +147,8 @@ img {
 }
 
 .form-control:focus {
-  border-color: #ffffff !important;
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+  border-color: var(--white-color-1) !important;
+  box-shadow: 0 0 0 0.2rem var(--black-color-7);
 }
 
 blockquote {
@@ -189,7 +189,7 @@ button {
   height: 20px;
   position: absolute;
   border-radius: 50%;
-  background-color: #a52a2a;
+  background-color: var(--red-color-1);
   left: 15%;
   transform-origin: 50%;
   animation: circle7124 0.5s alternate infinite ease;
@@ -229,7 +229,7 @@ button {
   width: 20px;
   height: 4px;
   border-radius: 50%;
-  background-color: #a52a2a;
+  background-color: var(--red-color-1);
   position: absolute;
   top: 62px;
   transform-origin: 50%;
@@ -276,7 +276,7 @@ ul.btn li {
 }
 
 ul.btn li a {
-  color: #fff;
+  color: var(--white-color-1);
   font-size: 16px;
 }
 
@@ -289,17 +289,17 @@ ul.btn li:last-child {
 }
 
 .login_btn a {
-  background-color: #fff;
+  background-color: var(--white-color-1);
   display: inline-block;
   padding: 7px 35px;
   border-radius: 10px;
-  color: #292e39 !important;
+  color: var(--black-color-4) !important;
   font-size: 17px;
 }
 
 .login_btn a:hover {
-  color: #fff !important;
-  background: #0808ff;
+  color: var(--white-color-1) !important;
+  background: var(--blue-color-1);
 }
 
 /* --------------------------------------------------
@@ -327,7 +327,7 @@ Style For Header section
 
 .navigation.navbar-dark .navbar-nav .nav-link {
   padding: 0 25px;
-  color: #fff;
+  color: var(--white-color-1);
   font-size: 17px;
   line-height: 20px;
   font-weight: 500;
@@ -361,7 +361,7 @@ Style For Header section
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white-color-1);
   line-height: 40px;
 }
 
@@ -415,7 +415,7 @@ Style For The Background Text in Banner
 }
 
 .text-bg h1 {
-  color: #fff;
+  color: var(--white-color-1);
   font-size: 78px;
   line-height: 80px;
   padding-bottom: 45px;
@@ -423,7 +423,7 @@ Style For The Background Text in Banner
 }
 
 .text-bg span {
-  color: #fff;
+  color: var(--white-color-1);
   font-size: 32px;
   line-height: 50px;
   font-weight: normal;
@@ -478,7 +478,7 @@ Style For The Background Text in Banner
 }
 
 #banner1 .carousel-indicators li.active {
-  background: #ffffff;
+  background: var(--white-color-1)fff;
 }
 
 #banner1 a.carousel-control-next,
@@ -495,8 +495,8 @@ Style For Banner section Buttons
 .text-bg a {
   font-size: 17px;
   background-color: transparent;
-  border: #fff solid 2px;
-  color: #fff;
+  border: var(--white-color-1) solid 2px;
+  color: var(--white-color-1);
   font-weight: 500;
   padding: 4px 0px;
   border-radius: 6px;
@@ -509,8 +509,8 @@ Style For Banner section Buttons
 }
 
 .text-bg a:hover {
-  background-color: #de5a5a;
-  color: #fff;
+  background-color: var(--red-color-2);
+  color: var(--white-color-1);
   transition: ease-in all 0.5s;
 }
 
@@ -541,7 +541,7 @@ Style For Card-service Section
   text-align: center;
   color: var(--text-color);
   border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+  box-shadow: 0 3px 12px var(--black-color-5);
   background: var(--secondary-background-color);
 }
 
@@ -570,7 +570,7 @@ Style For Categories Section
   border-radius: 50%;
   text-align: center;
   font-size: 24px;
-  box-shadow: 0 2px 14px rgba(95, 92, 120, 0.16);
+  box-shadow: 0 2px 14px var(--black-color-5);
   width: 150px;
   height: 130px !important;
 }
@@ -617,7 +617,7 @@ Style For Categories Section
 }
 
 .categories h5 {
-  color: #2d2b3a;
+  color: var(--black-color-3);
 }
 
 .dark-mode .categories h5 {
@@ -626,7 +626,7 @@ Style For Categories Section
 
 .categories p {
   font-size: 13px;
-  color: #898798;
+  color: var(--grey-color-2);
 }
 
 /* --------------------------------------
@@ -643,7 +643,7 @@ Style For About Us Section
 /* Added background using css variables instead of using hardcoded value */
 .aboutusbtn{
   background-color: var(--color-pink);
-  color: white;
+  color: var(--white-color-1);
   font-weight: 400;
 }
 
@@ -662,7 +662,7 @@ Style For New Arrivals Section
   padding: 1rem;
   max-width: 280px;
   border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(100, 95, 136, 0.16);
+  box-shadow: 0 2px 6px var(--light-blue-2);
   overflow: hidden;
   background: var(--secondary-background-color);
 }
@@ -685,7 +685,7 @@ Style For New Arrivals Section
 }
 
 .arrival-card .arrival-title a {
-  color: #645f88;
+  color: var(--light-blue-1);
   transition: color 0.2s ease;
 }
 
@@ -723,8 +723,8 @@ Style For Customer Review section
 
 .read_more {
   font-size: 17px;
-  background-color: #fe7696;
-  color: #fff !important;
+  background-color: var(--red-color-3);
+  color: var(--white-color-1) !important;
   padding: 13px 0px;
   width: 100%;
   max-width: 190px;
@@ -735,8 +735,8 @@ Style For Customer Review section
 }
 
 .read_more:hover {
-  background: #000;
-  color: #fff;
+  background: var(--black-color-6);
+  color: var(--white-color-1);
   transition: ease-in all 0.5s;
 }
 
@@ -800,7 +800,7 @@ Style For Customer Review section
 }
 
 .customer_Carousel .carousel-indicators li.active {
-  background: #361c16;
+  background: var(--brown-color-4);
 }
 
 #myCarousel .carousel-control-next-icon,
@@ -826,7 +826,7 @@ Style For Contact Us section
   position: relative;
 }
 .contact:before {
-  background: #482b24e7;
+  background: var(--brown-color-2);
   position: absolute;
   left: 0;
   top: 0;
@@ -839,10 +839,10 @@ Style For Contact Us section
 .section-header.contact-head h2,
 .section-header.contact-head p {
   position: relative;
-  color: #fff;
+  color: var(--white-color-1);
 }
 .contact-form h3 {
-  color: #fff;
+  color: var(--white-color-1);
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 40px;
@@ -864,12 +864,12 @@ Style For Contact Us section
 .contact-form .form-control {
   padding: 24px 21px;
   font-size: 16px;
-  border: 1px solid #f9faff;
+  border: 1px solid var(--white-color-2);
   border-radius: 0px;
   box-shadow: none;
   outline: 0 !important;
-  background: #f9faff;
-  color: #888;
+  background: var(--white-color-2);
+  color: var(--grey-color-5);
   resize: none;
 }
 .contact-form .form-group {
@@ -885,7 +885,7 @@ background: var(--color-pink);
 border-radius: 6px !important;
 height:50px;
 width: 195px;
-border:1px solid #482b24;
+border:1px solid var(--brown-color-2);
 text-transform:capitalize;
 margin-top: 3px;
 -webkit-transition: .5s; 
@@ -900,7 +900,7 @@ margin-top: 3px;
   margin-top: 0px;
   outline: 0 !important;
   border: 0;
-  color: #fff;
+  color: var(--white-color-1);
   letter-spacing: 2.5px;
   border-radius: 0px;
   font-size: 14px;
@@ -912,9 +912,9 @@ margin-top: 3px;
 }
 
 .single-contact-btn:hover button.contact-btn {
-  color: white;
-  background: #000;
-  border: 1px solid #361c16;
+  color: var(--white-color-1);
+  background: var(--black-color-6);
+  border: 1px solid var(--brown-color-4);
 }
 
 /*--contct button--*/
@@ -934,19 +934,19 @@ margin-top: 3px;
   margin-bottom: 18px;
 }
 .contact-office-address h3 {
-  color: #fff;
+  color: var(--white-color-1);
   font-size: 24px;
   text-transform: capitalize;
 }
 .contact-office-address p {
-  color: #fff;
+  color: var(--white-color-1);
   font-size: 14px;
   margin-bottom: 14px;
   margin-top: 30px;
   margin-bottom: 50px;
 }
 .contact-online-address {
-  color: #fff;
+  color: var(--white-color-1);
   font-size: 14px;
 }
 .single-online-address {
@@ -973,7 +973,7 @@ margin-top: 3px;
   float: left;
 }
 .contact-icon ul li > a {
-  color: #fff;
+  color: var(--white-color-1);
   margin-right: 13px;
   padding: 0px 12px 0px 0px;
   -webkit-transition: 0.3s;
@@ -987,7 +987,7 @@ margin-top: 3px;
   float: left;
 }
 .contact-icon ul li > a {
-  color: #ff8aa5;
+  color: var(--red-color-3);
   margin-right: 13px;
   padding: 0px 12px 0px 0px;
   -webkit-transition: 0.3s;
@@ -1021,9 +1021,9 @@ Style For Footer section
 }
 
 .footer .titlepage h2 {
-  color: #fff;
+  color: var(--white-color-1);
   margin: inherit;
-  border-bottom: #fff solid 1px;
+  border-bottom: var(--white-color-1) solid 1px;
 }
 
 .logo1 {
@@ -1043,7 +1043,7 @@ ul.social_icon li {
 }
 
 ul.social_icon li a {
-  background: #fff;
+  background: var(--white-color-1);
   width: 40px;
   height: 40px;
   display: flex;
@@ -1057,14 +1057,14 @@ ul.social_icon li a {
 
 ul.social_icon li a:hover {
   background-color: var(--color-pink-dark);
-  color: #fff;
+  color: var(--white-color-1);
 }
 
 .footer h3 {
   line-height: 25px;
   font-weight: 400;
   text-align: left;
-  color: #fff;
+  color: var(--white-color-1);
   padding-bottom: 15px;
 }
 
@@ -1072,7 +1072,7 @@ ul.social_icon li a:hover {
 .footer li a {
   text-align: left;
   margin-bottom: 12px;
-  color: rgb(176, 173, 173);
+  color: var(--grey-color-3);
 }
 
 .bottom_form .enter {
@@ -1080,8 +1080,8 @@ ul.social_icon li a:hover {
   padding: 0px 19px;
   width: 100%;
   height: 45px;
-  background: #fffffff2;
-  color: #ccc8c8;
+  background: var(--white-color-1)ffff2;
+  color: var(--grey-color-4);
   font-size: 15px;
   font-weight: 600;
   float: left;
@@ -1093,7 +1093,7 @@ ul.social_icon li a:hover {
   font-size: 17px;
   transition: ease-in all 0.5s;
   background-color: var(--color-pink-dark);
-  color: #fff;
+  color: var(--white-color-1);
   padding: 5px 0px;
   max-width: 147px;
   border-radius: 10px;
@@ -1105,9 +1105,9 @@ ul.social_icon li a:hover {
 }
 
 .sub_btn:hover {
-  background-color: #000;
+  background-color: var(--black-color-6);
   transition: ease-in all 0.5s;
-  color: #fff;
+  color: var(--white-color-1);
 }
 
 .copyright {
@@ -1116,17 +1116,17 @@ ul.social_icon li a:hover {
 }
 
 .copyright p {
-  color: #ddd;
+  color: var(--white-color-3);
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  border-top: #ddd solid 1px;
+  border-top: var(--white-color-3) solid 1px;
   padding-top: 25px;
   font-weight: normal;
 }
 
 .copyright a {
-  color: #ddd;
+  color: var(--white-color-3);
 }
 
 .copyright a:hover {
@@ -1147,18 +1147,18 @@ Style For page-section
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
-  color: #898798;
+  color: var(--grey-color-2);
   overflow: hidden;
 }
 .title-section {
-  color: #65443c;
+  color: var(--brown-color-1);
   font-size: 2rem;
 }
 .subhead {
   display: block;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #482b24;
+  color: var(--blown-color-2);
   font-weight: 500;
   margin-bottom: 8px;
 }
@@ -1192,7 +1192,7 @@ Style for toggle theme button
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 2px 6px 2px rgba(100, 95, 136, 0.62);
+  box-shadow: 0 2px 6px 2px var(--light-blue-1);
   z-index: 1;
 }
 
@@ -1213,11 +1213,11 @@ Style for toggle theme button
   width: 20px
 }
 ::-webkit-scrollbar-track{
-  background-color: rgb(247, 252, 254);
+  background-color: var(--white-color-2);
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color:#624a2e;
+  background-color: var(--brown-color-3);
   border-radius: 1rem;
   border:.3rem solid transparent;
   background-clip: content-box;

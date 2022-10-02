@@ -35,10 +35,10 @@ a:hover{
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    border: 2px solid pink;
+    border: 2px solid var(--red-color-4);
     background-color: var(--pink);
     border-radius: 5px;
-    color: white;
+    color: var(--white-color-1);
     font-weight: bold;
     font-size: 17px;
 }
