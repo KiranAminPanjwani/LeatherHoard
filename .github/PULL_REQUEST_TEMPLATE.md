@@ -1,14 +1,19 @@
 <!-- If your PR fixes an open issue, use `Closes #101` to link your PR with the issue. #101 stands for the issue number you are fixing -->
 
-## 🛠️ Fixes Issue
+## 🛠️ Fixes Issue : ""
+
+<!-- Mention the issue number you have fixed. 
+Example: 🛠️ Fixes Issue #31 -->
 
 <!-- Remove this section if not applicable -->
 
-<!-- Example: Closes #31 -->
 
-## 👨‍💻 Changes proposed
 
-<!-- List all the proposed changes in your PR -->
+## 👨‍💻 Changes proposed: 
+
+<!-- List all the changes you have made in the project -->
+
+<!-- DESCRIBE HERE -->
 
 ## ✔️ Check List (Check all the applicable boxes) <!-- Follow the below conventions to check the box -->
 

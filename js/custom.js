@@ -3,7 +3,7 @@
 ---------------------------------------------------------------------*/
 
 $(function () {
-  'use strict'
+  ;('use strict')
 
   /* Preloader
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
@@ -11,6 +11,23 @@ $(function () {
   setTimeout(function () {
     $('.loader_bg').fadeToggle()
   }, 2500)
+
+  /* Progress bar
+  -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+  const scrollProgressBar = document.querySelector('.progressBar')
+
+  document.addEventListener('scroll', () => {
+    const totalHeightOfPage = document.body.scrollHeight
+    const currentDistanceFromTop = document.documentElement.scrollTop
+    const windowHeight = document.documentElement.clientHeight
+
+    const scrollPercentage =
+      (currentDistanceFromTop / (totalHeightOfPage - windowHeight)) * 100
+
+    scrollProgressBar.style.width = `${scrollPercentage}%`
+
+    console.log(Math.round(scrollPercentage))
+  })
 
   /* Tooltip
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
