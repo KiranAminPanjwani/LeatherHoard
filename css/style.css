@@ -1,5 +1,6 @@
 /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-
+/*-------- impor utils.css------------*/
+@import url(./utils.css);
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
@@ -301,7 +302,47 @@ ul.btn li:last-child {
   color: #fff !important;
   background: #0808ff;
 }
-
+/* styleing for the search bar */
+.searchBox{
+  transform: translateY(-300px);
+  background-color: white !important;
+  transition: 0.5s ease;
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.searchBox-active{
+  display: inline-block;
+  transform: scaleY(1);
+}
+#searchInput{
+  padding: 10px;
+}
+.suggestionBox{
+  display: none;
+  overflow-y: scroll;
+  max-height: 200px;
+  width: 100%;
+}
+/*styling the dynamically generated list*/
+.suggestionBox li{
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+}
+.suggestionBox li:nth-child(2n){
+  background-color: #ececec;
+}
+.suggestionBox li:hover{
+  transition: 0.3s ease;
+  background-color: pink;
+}
+.suggestionBox-active{
+  display: block;
+}
 /* --------------------------------------------------
 ==================================================
 -------------------------------------------------- */

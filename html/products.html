@@ -32,6 +32,7 @@
       rel="stylesheet"
       href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
+    <script src="../js/searchSuggestions.js" async> </script>
     <script src="../js/products.js" defer async></script>
   </head>
   <body>
@@ -86,12 +87,21 @@
                            <li class="nav-item">
                               <a class="nav-link" href="#">Contact Us</a>
                            </li>
-                           <li class="nav-item d_none">
-                              <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                           </li>
-                           <li class="nav-item d_none">
-                              <a class="nav-link" href="#">Login</a>
-                           </li>
+                           <li class="nav-item d_none" >
+                            <i class="fa fa-search nav-link" aria-hidden="true" id="search-button"></i>
+                            <div class="searchBox">
+                               <div class="searchInputBox">
+                                  <input type="search" name="search" id="searchInput">
+                               </div>
+                               <div class="suggestionBox">
+                                  <div>this </div>
+                                  <div>that </div>
+                               </div>
+                            </div>
+                         </li>
+                         <li class="nav-item d_none">
+                            <a class="nav-link" href="login.html">Login</a>
+                         </li>
                         </ul>
                      </div>
                   </nav>
