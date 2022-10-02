@@ -876,6 +876,10 @@ Style For Contact Us section
   padding-bottom: 7px;
 }
 
+.contact-form .form-group .form-control:focus {
+  box-shadow: 0 0 15px #ff8aa5;
+}
+
 /*--contct button--*/
 .contact-form .single-contact-btn button{
 display:flex;
