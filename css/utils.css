@@ -1,48 +1,53 @@
 /* ..........imports for fonts (popins )........... */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300&display=swap");
 
 /*..............variables used........... */
-:root{
-    --white : white;
-    --pink : #ff8aa5;
+:root {
+  --white: white;
+  --pink: #ff8aa5;
 }
 /* universal style  */
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none !important;
-    font-family: "Poppins", sans-serif;
-    transition: 0.2s;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s;
 }
-a:hover{
-    color: var(--pink) !important;
-    transition: 0.2s ease-in-out;
+a:hover {
+  color: var(--pink) !important;
+  transition: 0.2s ease-in-out;
 }
-.flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.flex-center-column{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* styling dynamically generated buy button form products.js */
-#buy{
-    margin: 30px;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 2px solid pink;
-    background-color: var(--pink);
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
+#buy {
+  margin: 30px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid pink;
+  background-color: var(--pink);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
 }
-#buy:hover{
-    scale: 1.05;
-    opacity: 0.7;
+#buy:hover {
+  scale: 1.05;
+  opacity: 0.7;
 }

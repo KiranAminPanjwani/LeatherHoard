@@ -32,10 +32,8 @@
   --color-dark-2: #c8c8dc;
 }
 
-
 /* ---------------------- Theme related css ---------------------- */
 
 .dark-mode .bg-light {
   background-color: var(--secondary-background-color) !important;
 }
-
