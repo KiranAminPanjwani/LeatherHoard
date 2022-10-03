@@ -603,10 +603,16 @@ Style For Card-service Section
     text-align: center;
     color: var(--text-color);
     border-radius: 8px;
-    box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+    box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.08);
     background: var(--secondary-background-color);
+    transition: 0.5s;
 }
 
+.card-service:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.15);
+
+}
 /* ------------------------------------------------
 ===============================================
 ------------------------------------------------ */
