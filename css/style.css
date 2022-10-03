@@ -1124,16 +1124,19 @@ ul.social_icon li {
 }
 
 ul.social_icon li a {
-  background: #fff;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  border-radius: 30px;
-  margin: 0 3px;
-  transition: 0s;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 30px;
+    margin: 0 3px;
+    transition: 0s;
+    transition: all 400ms ease;
+
+
 }
 
 ul.social_icon li a:hover {
@@ -1211,7 +1214,10 @@ ul.social_icon li a:hover {
 }
 
 .copyright a:hover {
-  color: var(--color-pink-dark);
+    color: var(--color-pink-dark);
+    transition: all 400ms ease;
+
+ 
 }
 
 /* ------------------------------------
