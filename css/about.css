@@ -1,0 +1,87 @@
+/* ...............styleing the header  .................  */
+header {
+  background-image: url(../images/banner4.png);
+  height: 60vh;
+}
+
+/* ...............styleing the Main body starts.................  */
+.hidden{
+    opacity: 0;
+    transition: 1.5s ease;
+    transform: translateY(180px);
+    filter: blur(5px);
+}
+.show{
+    transition: 1.5s ease;
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0);
+}
+.raised {
+  transform: translateY(-30vh);
+  position: relative;
+  z-index: 200;
+  margin: 30px;
+  padding: 30px;
+  background-color: white;
+}
+.section1 h1, .section3 h1, .section4 h1{
+    font-size: 50px;
+}
+.section1 , .section4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section1 img{
+  width: 50vw;
+  margin-left: 30px;
+}
+.section2 blockquote h1 {
+  margin: 30px;
+}
+.section3 .stats-holder{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section3 h1{
+    font-size: 50px;
+}
+.stats-info{
+    padding: 30px;
+    text-align: center;
+}
+.section4{
+    margin-top: 100px;
+    flex-direction: row-reverse;
+}
+.section4 img{
+    max-width: 50vw;
+    margin: 30px;
+    margin-left: 0px;
+}
+.section5{
+    text-align: center;
+    transform: translateY(-20vh);
+}
+.section5 .products-holder{
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+}
+.section5 .products-holder .product-cards{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-cards img{
+    width: 300px;
+    filter: drop-shadow(7px 2px 10px rgba(0, 0, 0, 0.215));
+}
+.section6{
+    
+}
