@@ -551,9 +551,8 @@ Style For Banner section Buttons
 
 .text-bg a {
   font-size: 17px;
-  background-color: transparent;
   border: #fff solid 2px;
-  color: #fff;
+  color: #f7c3cc;
   font-weight: 500;
   padding: 4px 0px;
   border-radius: 6px;
@@ -561,14 +560,12 @@ Style For Banner section Buttons
   max-width: 215px;
   text-align: center;
   display: inline-block;
-  transition: ease-in all 0.5s;
   margin-right: 10px;
 }
 
 .text-bg a:hover {
   background-color: #de5a5a;
-  color: #fff;
-  transition: ease-in all 0.5s;
+  transition: ease-in all 0.2s;
 }
 
 /* colors_used: var(--color-pink), #de5a5a (dark pink), 361C16 (brown)*/
@@ -810,7 +807,7 @@ Style For Customer Review section
 }
 
 .read_more:hover {
-  background: #000;
+  background: pink;
   color: #fff;
   transition: ease-in all 0.5s;
 }
@@ -967,11 +964,11 @@ Style For Contact Us section
   border: 1px solid #482b24;
   text-transform: capitalize;
   margin-top: 3px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .contact-form .single-contact-btn button.contact-btn,
@@ -983,11 +980,11 @@ Style For Contact Us section
   letter-spacing: 2.5px;
   border-radius: 0px;
   font-size: 14px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .single-contact-btn:hover button.contact-btn {
@@ -1185,12 +1182,16 @@ ul.social_icon li a:hover {
   display: block;
   font-weight: 500;
   text-transform: uppercase;
-  transition: 1ms;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .sub_btn:hover {
   background-color: #000;
-  transition: ease-in all 0.5s;
+  transition: ease-in-out all 0.2s;
   color: #fff;
 }
 
