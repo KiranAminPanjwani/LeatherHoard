@@ -28,6 +28,9 @@
   padding-right: 30px;
   padding-top:30px;
 }
+.cancelBuy img{
+  cursor: pointer;
+}
 .modal-buy .product{
   height: 100%;
   display: flex;

@@ -1,0 +1,140 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+/*-------- impor utils.css------------*/
+@import url(./utils.css);
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #666666;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
+  background-color: var(--primary-background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0 0 10px 0;
+  font-weight: normal;
+  line-height: normal;
+  color: #111111;
+  margin: 10px 0 10px 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+.privacy-wrapper p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.privacy-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.privacy-header h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.privacy-wrapper {
+  margin: 15px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacy-headerbody {
+  margin-bottom: 15px;
+}
+
+.privacy-section {
+  padding: 15px 0px;
+}
+
+.privacy-section h3 {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 0 10px;
+  }
+
+  .privacy-wrapper {
+    width: 83%;
+    margin: 10px auto;
+  }
+
+  .privacy-header h1 {
+    margin-top: 6px;
+  }
+
+  .privacy-headerbody {
+    margin-bottom: 10px;
+  }
+
+  .privacy-section {
+    padding: 10px 0px;
+  }
+
+  .privacy-section h3 {
+    margin-bottom: 2px;
+  }
+}
