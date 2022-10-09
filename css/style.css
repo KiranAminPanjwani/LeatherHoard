@@ -1323,3 +1323,25 @@ Style for toggle theme button
     border: 0.3rem solid transparent;
     background-clip: content-box;
 }
+/* for back to scroll feature  */
+/* 
+  
+  #myBtn:hover {
+    background-color: #555;
+  } */
+  #myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 90px;
+    right: 33px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(163, 156, 156);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+
+    border-radius: 50%;
+  }
