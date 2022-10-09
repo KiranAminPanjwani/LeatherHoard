@@ -1,15 +1,24 @@
 
 <h1 align="center">Leather Hoard</h1>
 
-<h2 align="center"> Leather Hoard is an Open Source Website built using HTML, CSS, JavaScript and Bootstrap. </h2>
+<h2 align="center"> Leather Hoard is an open-source website built with HTML, CSS, JavaScript and Bootstrap. </h2>
 
-The Leather Hoard website is a website for selling leather products. This project is a design template for an online store. Anyone is welcome to add a new feature to this website. _Examples_ include the sign-in page, sign-up page, product list page, product search capabilities, "Buy now" form, send messages functionality, read more/view more functionality, subscribe functionality and many more.
+Leather Hoard is a site for selling leather products. It can be used as a design template for an online store, and anyone is welcome to add new features to it. Examples include:
+- a sign-in page
+- a sign-up page
+- a product list page
+- product search capabilities
+- a *Buy now* form
+- message-sending  functionality
+- read more/view more functionality
+- subscribe functionality
+- and many more!
 
-The aforementioned improvements will make it easier for visitors to browse the website and place online orders for new products. Additionally, it will aid the learners in understanding the fundamental components of an e-commerce website.
+The aforementioned improvements will make it easier for visitors to browse Leather Hoard and place online orders for products. Additionally, it will aid learners in understanding the fundamental components of an e-commerce website.
 
-Visit the website: [Leather Hoard](https://leatherhoard.netlify.app/)
+Visit the website [here](https://leatherhoard.netlify.app/).
 
-# <h3> 📌 Tech Stack</h3>
+# <h3>📌 Tech Stack</h3>
 
 ![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
@@ -17,77 +26,77 @@ Visit the website: [Leather Hoard](https://leatherhoard.netlify.app/)
 <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 
 #
-<h3> 📌 Live Demo of the Website:</h3>
+<h3>📌 Live Demo</h3>
 
 https://user-images.githubusercontent.com/90326051/192001070-e5b69685-9c0a-4c3b-994a-0e5cdf5af577.mp4
 
 
 #
-<h3> 📌 Contribution Guidelines 🏗 </h3>
+<h3>📌 Contribution Guidelines 🏗 </h3>
 
-Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
-To start contributing, follow the below guidelines: 
+Are we missing any of your favorite features—and do you think you can add  it❓ We invite you to contribute to and improve this project. 
+To start contributing, please adhere to the below guidelines: 
 
-**1.**  Fork [this](https://github.com/KiranAminPanjwani/LeatherHoard) repository.
+**1.** Fork [this](https://github.com/KiranAminPanjwani/LeatherHoard) repository.
 
-**2.**  Clone your forked copy of the project.
+**2.** Clone your forked copy of the project:
 
 ```bash
-   git clone https://github.com/KiranAminPanjwani/LeatherHoard.git
+git clone https://github.com/KiranAminPanjwani/LeatherHoard.git
 ```
 
-**3.** Navigate to the project directory.
-```
-   cd LeatherHoard-Website
+**3.** Navigate to the project directory:
+```bash
+cd LeatherHoard-Website
 ```
 
 **4.** Create a new branch:
-```
-   git checkout -b YourBranchName
-```
-
-**5.** Make changes in source code.
-
-**6.** Stage your changes and commit
-
-```
-   git add .
-   git commit -m "<your_commit_message>"
+```bash
+git checkout -b YourBranchName
 ```
 
-**7.** Push your local commits to the remote repo.
+**5.** Make any source code changes.
 
-```
-   git push origin YourBranchName
-```
+**6.** Stage your changes and commit:
 
-**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
-
-**9.** If anyone contribute to this repository, then the changes will not reflect in your local repository. For that:
-
-**10.** Setup a reference(remote) to the original repository to get all the changes from the remote.
-```
-   git remote add upstream  https://github.com/KiranAminPanjwani/LeatherHoard
+```bash
+git add .
+git commit -m "<your_commit_message>"
 ```
 
-**11.** Check the remotes for this repository.
-```
-   git remote -v
+**7.** Push your local commits to the remote repo:
+
+```bash
+git push origin YourBranchName
 ```
 
-**12.** Fetching from the remote repository will bring in its branches and their respective commits.
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+**9.** If anyone contributes to this repository, then their changes will not reflect in your local repository. To rectify that:
+
+**10.** Setup a reference (remote) to this original repository to get all changes from it:
+```bash
+git remote add upstream  https://github.com/KiranAminPanjwani/LeatherHoard
 ```
-   git fetch upstream
+
+**11.** Check the remotes for this repository:
+```bash
+git remote -v
+```
+
+**12.** Fetching from the remote repository will bring in its branches and their respective commits:
+```bash
+git fetch upstream
 ```
 
 **13.** Make sure that you're on your master branch.
-```
-   git checkout main
+```bash
+git checkout main
 ```
 
-**14.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream, without losing our local changes.
-```
-   git merge upstream/main
+**14.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream without losing our local changes.
+```bash
+git merge upstream/main
 ```
 
 ## Code of Conduct 📜
@@ -98,9 +107,9 @@ To maintain a safe and inclusive space for everyone to learn and grow, contribut
 
 If you have any feedback or suggestions please reach out to me.  
 
-In order to make a hassle-free environment, I implore you all (while contributing) to follow the instructions [Contributing Guidelines](https://github.com/KiranAminPanjwani/LeatherHoard/blob/main/Contributing_Guidlines.md)!
+In order to make a hassle-free environment, I ask you all (while contributing) to follow the instructions [Contributing Guidelines](https://github.com/KiranAminPanjwani/LeatherHoard/blob/main/Contributing_Guidlines.md)!
 
-You can create a <a href="https://github.com/KiranAminPanjwani/LeatherHoard/issues">issue</a> and mention there , which new features or extension can make this Project more good.
+You can create an <a href="https://github.com/KiranAminPanjwani/LeatherHoard/issues">issue</a> and mention in it which new features or extensions can make this project better.
 
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
