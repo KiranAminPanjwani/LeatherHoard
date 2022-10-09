@@ -3,10 +3,10 @@
 @import url(./utils.css);
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap");
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -25,7 +25,7 @@ html {
 body {
   color: #666666;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.80857;
   font-weight: normal;
   background-color: var(--primary-background-color);
@@ -438,7 +438,7 @@ Style For Banner section
 }
 .banner_main::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 50px;
   height: 40px;
   background: url(../images/cross.png);
@@ -448,7 +448,7 @@ Style For Banner section
 }
 .banner_main::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 50px;
   height: 40px;
   background: url(../images/cross.png);
@@ -607,6 +607,12 @@ Style For Card-service Section
   background: var(--secondary-background-color);
 }
 
+.card-service:hover {
+  max-width: 330px;
+  height: 510px;
+  transition: 1s;
+}
+
 /* ------------------------------------------------
 ===============================================
 ------------------------------------------------ */
@@ -737,6 +743,12 @@ Style For New Arrivals Section
   box-shadow: 0 2px 6px rgba(100, 95, 136, 0.16);
   overflow: hidden;
   background: var(--secondary-background-color);
+}
+
+.arrival-card:hover {
+  max-width: 300px;
+  max-height: 400px;
+  transition: 0.5s;
 }
 
 .arrival-card .arrival_picture {
@@ -907,7 +919,7 @@ Style For Contact Us section
   top: 0;
   width: 100%;
   height: 100%;
-  content: '';
+  content: "";
 }
 
 /*contact-head */
@@ -1124,19 +1136,17 @@ ul.social_icon li {
 }
 
 ul.social_icon li a {
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    border-radius: 30px;
-    margin: 0 3px;
-    transition: 0s;
-    transition: all 400ms ease;
-
-
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 30px;
+  margin: 0 3px;
+  transition: 0s;
+  transition: all 400ms ease;
 }
 
 ul.social_icon li a:hover {
@@ -1214,10 +1224,8 @@ ul.social_icon li a:hover {
 }
 
 .copyright a:hover {
-    color: var(--color-pink-dark);
-    transition: all 400ms ease;
-
- 
+  color: var(--color-pink-dark);
+  transition: all 400ms ease;
 }
 
 /* ------------------------------------
