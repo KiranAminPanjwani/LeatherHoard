@@ -759,6 +759,10 @@ Style For New Arrivals Section
     overflow: hidden;
     background: var(--secondary-background-color);
 }
+.arrival-card:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
 
 .arrival-card .arrival_picture {
     display: flex;
@@ -1096,6 +1100,11 @@ Style For Contact Us section
     -o-transition: 0.3s;
     transition: 0.3s;
 }
+.contact.icon:hover{
+    font-size: 20px;
+    color: #fff;
+}
+
 
 /* ------------------------------------
 ====================================
@@ -1158,10 +1167,11 @@ ul.social_icon li a {
     transition: all 400ms ease;
 }
 
-ul.social_icon li a:hover {
+ul.social_icon li .fa a:hover {
     background-color: var(--color-pink-dark);
     color: #fff;
 }
+
 
 .footer h3 {
     line-height: 25px;
@@ -1345,3 +1355,8 @@ Style for toggle theme button
 
     border-radius: 50%;
   }
+
+/* Icons hover effect */
+.fa {
+    font-size: 16px;
+}
