@@ -7,10 +7,10 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap");
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -30,7 +30,11 @@ html {
 body {
     color: #666666;
     font-size: 14px;
+
     font-family: 'Poppins', sans-serif;
+
+    font-family: "Poppins", sans-serif;
+
     line-height: 1.80857;
     font-weight: normal;
     background-color: var(--primary-background-color);
@@ -196,6 +200,7 @@ button {
     animation: circle7124 0.5s alternate infinite ease;
 }
 
+
 @keyframes circle7124 {
     0% {
         top: 60px;
@@ -208,6 +213,23 @@ button {
         border-radius: 50%;
         transform: scaleX(1);
     }
+
+
+@keyframes circle7124 {
+    0% {
+        top: 60px;
+        height: 5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+    }
+
+    40% {
+        height: 20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+
+
     100% {
         top: 0%;
     }
@@ -242,10 +264,12 @@ button {
     0% {
         transform: scaleX(1.5);
     }
+
     40% {
         transform: scaleX(1);
         opacity: 0.7;
     }
+
     100% {
         transform: scaleX(0.2);
         opacity: 0.4;
@@ -407,7 +431,11 @@ Style For Header section
 .navigation.navbar-dark .navbar-nav .active>.nav-link,
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
+
 .navigation.navbar-dark .navbar-nav .show>.nav-link {
+
+.navigation.navbar-dark .navbar-nav .show > .nav-link {
+
     color: var(--color-pink);
 }
 
@@ -458,7 +486,10 @@ Style For Banner section
 
 .banner_main::before {
     position: absolute;
+
     content: '';
+
+   
     width: 50px;
     height: 40px;
     background: url(../images/cross.png);
@@ -469,7 +500,7 @@ Style For Banner section
 
 .banner_main::after {
     position: absolute;
-    content: '';
+
     width: 50px;
     height: 40px;
     background: url(../images/cross.png);
@@ -623,7 +654,14 @@ Style For Card-service Section
     object-fit: contain;
 }
 
+
 .card-service {
+
+
+
+
+
+
     display: block;
     margin: 16px auto;
     padding: 32px 20px;
@@ -631,10 +669,38 @@ Style For Card-service Section
     text-align: center;
     color: var(--text-color);
     border-radius: 8px;
+
     box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
     background: var(--secondary-background-color);
 }
 
+
+
+    box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+    background: var(--secondary-background-color);
+
+    box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.08);
+    background: var(--secondary-background-color);
+    transition: 0.5s;
+
+  display: block;
+  margin: 16px auto;
+  padding: 32px 20px;
+  max-width: 300px;
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+  background: var(--secondary-background-color);
+
+
+}
+
+.card-service:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.15);
+
+}
 
 /* ------------------------------------------------
 ===============================================
@@ -649,6 +715,7 @@ Style For Categories Section
 
 .categories {
     text-align: center;
+
 }
 
 .categories .headimg {
@@ -714,6 +781,60 @@ Style For Categories Section
     background: url(../images/Leather-caps.jpeg);
     background-repeat: none;
     background-size: cover;
+
+    padding: 12px;
+    border: solid 1px transparent;
+}
+
+.categories:hover {
+    background-color: #593f39;
+    border: solid 1px #645f88;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.categories:hover img {
+    transform: scale(1.1);
+    will-change: transform;
+    transition-duration: 0.6s ease all;
+}
+
+.categories:hover h5,
+.categories:hover p {
+    color: rgb(176, 173, 173);
+}
+
+.categories .headimg {
+    width: 150px;
+    height: 140px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    background-color: white;
+}
+
+.cat-btn {
+    display: block !important;
+    margin: 0 auto !important;
+    width: max-content !important;
+}
+
+.categories .headimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.innerimg {
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 2px 14px rgba(95, 92, 120, 0.16);
+    width: 150px;
+    height: 130px !important;
+
 }
 
 .categories h5 {
@@ -961,7 +1082,7 @@ Style For Contact Us section
     top: 0;
     width: 100%;
     height: 100%;
-    content: '';
+
 }
 
 
@@ -1118,10 +1239,14 @@ Style For Contact Us section
     left: 25px;
     top: 0;
     width: 100%;
+
 }
 
 
 /* contact-adress */
+
+
+} /* contact-adress */
 
 
 /*hm-foot-icon*/
@@ -1134,7 +1259,11 @@ Style For Contact Us section
     float: left;
 }
 
+
 .contact-icon ul li>a {
+
+.contact-icon ul li > a {
+
     color: #fff;
     margin-right: 13px;
     padding: 0px 12px 0px 0px;
@@ -1149,7 +1278,11 @@ Style For Contact Us section
     float: left;
 }
 
+
 .contact-icon ul li>a {
+
+.contact-icon ul li > a {
+
     color: #ff8aa5;
     margin-right: 13px;
     padding: 0px 12px 0px 0px;
@@ -1220,14 +1353,23 @@ ul.social_icon li a {
     font-size: 25px;
     border-radius: 30px;
     margin: 0 3px;
+
     /* transition: 0s; */
+
+    transition: 0s;
+    transition: all 400ms ease;
+
 }
 
 ul.social_icon li a:hover {
     background-color: var(--color-pink-dark);
+
     color: white !important;
     /* opacity: 1; */
     /* transition: .3s; */
+
+    color: #fff;
+
 }
 
 .footer h3 {
@@ -1266,7 +1408,11 @@ ul.social_icon li a:hover {
     color: #fff;
     padding: 5px 0px;
     max-width: 147px;
+
     border-radius: 6px;
+
+    border-radius: 10px;
+
     width: 100%;
     display: block;
     font-weight: 500;
@@ -1275,7 +1421,11 @@ ul.social_icon li a:hover {
 }
 
 .sub_btn:hover {
+
     background-color: #f87c99;
+
+    background-color: #000;
+
     transition: ease-in all 0.5s;
     color: #fff;
 }
@@ -1327,9 +1477,13 @@ Style For page-section
 .title-section {
     color: #65443c;
     font-size: 2rem;
+
 }
 
 .subhead {
+
+}.subhead {
+
     display: block;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -1398,4 +1552,30 @@ Style for toggle theme button
     border-radius: 1rem;
     border: 0.3rem solid transparent;
     background-clip: content-box;
+
 }
+
+}
+/* for back to scroll feature  */
+/* 
+  
+  #myBtn:hover {
+    background-color: #555;
+  } */
+  #myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 90px;
+    right: 33px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(163, 156, 156);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+
+    border-radius: 50%;
+  }
+
