@@ -118,6 +118,7 @@ p {
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
+    
 }
 
 a {
@@ -1246,6 +1247,7 @@ ul.social_icon li a:hover {
 Style For page-section
 
 -------------------------- */
+
 
 .page-section {
     position: relative;
