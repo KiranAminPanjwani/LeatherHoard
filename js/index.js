@@ -7,52 +7,54 @@ let suggBox = searchBox.querySelector(".suggestionBox");
 
 // open search box on click
 let seachClickCounter = 2;
-searchBtn.onclick = ()=>{
-    searchInput.setAttribute("placeholder" , `Recent : ${getData("recentSearch")}`);
-    if(seachClickCounter%2 == 0){
-        searchBox.classList.add("searchBox-active");
-    }else{
-        searchBox.classList.remove("searchBox-active");
-    }
-    seachClickCounter++
-}
+searchBtn.onclick = () => {
+  searchInput.setAttribute(
+    "placeholder",`Recent : ${getData("recentSearch")}`);
+  if (seachClickCounter % 2 == 0) {
+    searchBox.classList.add("searchBox-active");
+  } else {
+    searchBox.classList.remove("searchBox-active");
+  }
+  seachClickCounter++;
+};
 
 //ge typed data in the search input
 searchInput.onkeyup = (e) => {
-    let searchKey = e.target.value;
-    // / if search key is present
-    if(searchKey.length){
-        let arr = [];
-        // put search value into array and make it lowercase
-        arr = suggestions.filter((data)=>{
-            // convert everything to lower case
-            let lowerSearchKey = searchKey.toLocaleLowerCase();
-            let loweCaseData = data.toLocaleLowerCase();
-            // only pass value which mach the search key
-            let suggPresent = loweCaseData.startsWith(lowerSearchKey);
-            return suggPresent;
-        })
-        // wrap data with li tags
-        arr = arr.map((toConvertData) => {
-            return `<li>${toConvertData}</li>`
-        })
-        // show data on suggestion box
-        showSuggestions(arr);
-        suggBox.classList.add('suggestionBox-active');
+  let searchKey = e.target.value;
+  // / if search key is present
+  if (searchKey.length) {
+    let arr = [];
+    // put search value into array and make it lowercase
+    arr = suggestions.filter((data) => {
+      // convert everything to lower case
+      let lowerSearchKey = searchKey.toLocaleLowerCase();
+      let loweCaseData = data.toLocaleLowerCase();
+      // only pass value which mach the search key
+      let suggPresent = loweCaseData.startsWith(lowerSearchKey);
+      return suggPresent;
+    });
+    // wrap data with li tags
+    arr = arr.map((toConvertData) => {
+      return `<li>${toConvertData}</li>`;
+    });
+    // show data on suggestion box
+    showSuggestions(arr);
+    suggBox.classList.add("suggestionBox-active");
 
-        //sectict data from suggestion box to input
-        let allDynamicList = suggBox.querySelectorAll("li");
-        for (let i = 0; i < allDynamicList.length; i++) {
-            allDynamicList[i].setAttribute("onclick", "select(this)")
-        }
+    //sectict data from suggestion box to input
+    let allDynamicList = suggBox.querySelectorAll("li");
+    for (let i = 0; i < allDynamicList.length; i++) {
+      allDynamicList[i].setAttribute("onclick", "select(this)");
     }
-    // / else search key is empty
-    else{
-        suggBox.classList.remove('suggestionBox-active');
-    }
-}
+  }
+  // / else search key is empty
+  else {
+    suggBox.classList.remove("suggestionBox-active");
+  }
+};
 
 // function to select the suggestion to input
+
 function select(ele){
 
     let selection = ele.textContent;
@@ -139,22 +141,22 @@ function select(ele){
 }
 
 //function to show the suggestion data
-function showSuggestions(arr){
-    let arrData;
-    if(!arr.length){
-        let inputValue = searchInput.value;
-        arrData = "<li>"+ inputValue +" - not found 🙁</li>"
-    }
-    else{
-        //join the arry
-        arrData = arr.join('');
-    }
-    // pass arr to suggestion box
-    suggBox.innerHTML = arrData;
+function showSuggestions(arr) {
+  let arrData;
+  if (!arr.length) {
+    let inputValue = searchInput.value;
+    arrData = "<li>" + inputValue + " - not found 🙁</li>";
+  } else {
+    //join the arry
+    arrData = arr.join("");
+  }
+  // pass arr to suggestion box
+  suggBox.innerHTML = arrData;
 }
-function saveData(data){
-        localStorage.setItem("recentSearch" , `${data}`);
-    }
-function getData(){
-       return localStorage.getItem("recentSearch");
-    }
+function saveData(data) {
+  localStorage.setItem("recentSearch", `${data}`);
+}
+function getData() {
+  return localStorage.getItem("recentSearch");
+}
+
