@@ -719,6 +719,9 @@ Style For About Us Section
   object-fit: contain;
 }
 
+#Refund {
+  background-color: var(--secondary-background-color);
+}
 /* ---------------------------
 
 Style For New Arrivals Section

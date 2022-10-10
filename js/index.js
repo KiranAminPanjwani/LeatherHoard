@@ -85,6 +85,10 @@ function select(ele){
             window.location.href = "#about";
             break
         }
+        case("Refund Policy"):{
+            window.location.href = "#Refund";
+            break
+    }
         case("Contributors"):{
             
             window.location.href = "#about";
