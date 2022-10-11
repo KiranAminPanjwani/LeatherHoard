@@ -120,6 +120,10 @@ p {
     line-height: 24px;
 }
 
+.offerp{
+    color: white;
+}
+
 a {
     color: var(--color-dark-1);
     text-decoration: none;
@@ -205,8 +209,7 @@ button {
     }
 
     100% {
-        top: 100%;
-        background-color: #111111;
+        top: 0%;
     }
 }
 
