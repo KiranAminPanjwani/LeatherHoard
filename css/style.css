@@ -205,7 +205,8 @@ button {
     }
 
     100% {
-        top: 0%;
+        top: 100%;
+        background-color: #111111;
     }
 }
 
