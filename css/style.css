@@ -120,6 +120,10 @@ p {
     line-height: 24px;
 }
 
+.offerp{
+    color: white;
+}
+
 a {
     color: var(--color-dark-1);
     text-decoration: none;
@@ -599,7 +603,10 @@ Style For Card-service Section
 
 
 
+
+
 .card-service{
+
     display: block;
     margin: 16px auto;
     padding: 32px 20px;
@@ -1356,7 +1363,9 @@ Style for toggle theme button
     border-radius: 50%;
   }
 
+
 /* Icons hover effect */
 .fa {
     font-size: 16px;
 }
+
