@@ -284,4 +284,11 @@
     .d_none {
         display: none;
     }
+    @media (max-width:330px) {
+        .SubmitBtn{
+            width:auto;
+        }
+        
+    }
+
 }
