@@ -1369,3 +1369,9 @@ Style for toggle theme button
     font-size: 16px;
 }
 
+
+/* hover effect on featured image*/
+.transi:hover{
+    transform: scale(1.15);
+  transition: transform .1s;
+}
