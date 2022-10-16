@@ -113,10 +113,46 @@
             </section>
             <section class="section3 hidden">
                 <div class="stats-holder">
-                    <span class="stats"><h1>1000 +</h1><span><b>million sales</b></span></span>
-                    <span class="stats"><h1>700 +</h1><span><b>gallons of saved water</b></span></span>
-                    <span class="stats"><h1>800 +</h1><span><b>branches all over world</b></span></span>
-                    <span class="stats"><h1>10000 +</h1><span><b>happy costumers</b></span></span>
+
+                     <div class="stats">
+                        <div class="stats-counter">
+                           <h1 class="counter" data-target="1000">0</h1>
+                           <span>+</span>
+                        </div>
+                        <div>
+                           <b>million sales</b>
+                        </div>
+                     </div>
+
+                     <div class="stats">
+                        <div class="stats-counter">
+                           <h1 class="counter" data-target="700">0</h1>
+                           <span>+</span>
+                        </div>
+                        <div>
+                           <b>gallons of saved water</b>
+                        </div>
+                     </div>
+
+                     <div class="stats">
+                        <div class="stats-counter">
+                           <h1 class="counter" data-target="800">0</h1>
+                           <span>+</span>
+                        </div>
+                        <div>
+                           <b>branches all over world</b>
+                        </div>
+                     </div>
+
+                     <div class="stats">
+                        <div class="stats-counter">
+                           <h1 class="counter" data-target="10000">0</h1>
+                           <span>+</span>
+                        </div>
+                        <div>
+                           <b>happy costumers</b>
+                        </div>
+                     </div>
                 </div>
                 <p class="stats-info">
                     We have been in business for many years now, and we have made so many sales. We are all over the world, and our products are winning awards everywhere.
@@ -213,5 +249,23 @@
  </footer>
  <!-- end footer -->
     </main>
+
+    <script>
+      const counters = document.querySelectorAll('.counter');
+      let speed = 200;
+
+      counters.forEach((counter, index) => {
+         function updateCounter() {
+            const target = +counter.dataset.target;
+            const initial = +counter.innerText;
+            const incPerCount = target/speed;
+            if(initial < target) {
+               counter.innerText = Math.ceil(initial + incPerCount);
+               setTimeout(updateCounter, 40);
+            }
+         }
+         updateCounter();
+      });
+    </script>
   </body>
   </html>
