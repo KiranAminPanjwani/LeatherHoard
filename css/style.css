@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
 /*-------- impor utils.css------------*/
+
 @import url(./utils.css);
+
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
@@ -11,6 +15,7 @@
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
+
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -25,7 +30,11 @@ html {
 body {
     color: #666666;
     font-size: 14px;
+
+    font-family: 'Poppins', sans-serif;
+
     font-family: "Poppins", sans-serif;
+
     line-height: 1.80857;
     font-weight: normal;
     background-color: var(--primary-background-color);
@@ -162,6 +171,7 @@ button {
     cursor: pointer;
 }
 
+
 /*---------------------------- preloader area ----------------------------*/
 
 .loader_bg {
@@ -194,6 +204,21 @@ button {
     animation: circle7124 0.5s alternate infinite ease;
 }
 
+
+@keyframes circle7124 {
+    0% {
+        top: 60px;
+        height: 5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+    }
+    40% {
+        height: 20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+
+
 @keyframes circle7124 {
     0% {
         top: 60px;
@@ -207,6 +232,7 @@ button {
         border-radius: 50%;
         transform: scaleX(1);
     }
+
 
     100% {
         top: 0%;
@@ -265,6 +291,7 @@ button {
     animation-delay: 0.3s;
 }
 
+
 /*---------------------------- Scroll progress bar ----------------------------*/
 
 .progressBar {
@@ -313,7 +340,10 @@ ul.btn li:last-child {
     color: #fff !important;
     background: #0808ff;
 }
+
+
 /* styleing for the search bar */
+
 .searchBox {
     transform: translateY(-300px);
     background-color: white !important;
@@ -325,38 +355,50 @@ ul.btn li:last-child {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
 .searchBox-active {
     display: inline-block;
     transform: scaleY(1);
 }
+
 #searchInput {
     padding: 10px;
 }
+
 .suggestionBox {
     display: none;
     overflow-y: scroll;
     max-height: 200px;
     width: 100%;
 }
+
+
 /*styling the dynamically generated list*/
+
 .suggestionBox li {
     cursor: pointer;
     padding: 10px;
     width: 100%;
 }
+
 .suggestionBox li:nth-child(2n) {
     background-color: #ececec;
 }
+
 .suggestionBox li:hover {
     transition: 0.3s ease;
     background-color: pink;
 }
+
 .suggestionBox-active {
     display: block;
 }
+
+
 /* --------------------------------------------------
 ==================================================
 -------------------------------------------------- */
+
 
 /* ---------------------------
 
@@ -390,10 +432,14 @@ Style For Header section
     color: var(--color-pink);
 }
 
-.navigation.navbar-dark .navbar-nav .active > .nav-link,
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
 .navigation.navbar-dark .navbar-nav .nav-link.active,
 .navigation.navbar-dark .navbar-nav .nav-link.show,
+
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+
 .navigation.navbar-dark .navbar-nav .show > .nav-link {
+
     color: var(--color-pink);
 }
 
@@ -422,6 +468,7 @@ Style For Header section
     height: 76px;
 }
 
+
 /* ---------------------------
 
 Style For Banner section
@@ -440,9 +487,13 @@ Style For Banner section
     position: relative;
     padding: 0 5px;
 }
+
 .banner_main::before {
     position: absolute;
-    content: "";
+
+    content: '';
+
+   
     width: 50px;
     height: 40px;
     background: url(../images/cross.png);
@@ -450,9 +501,10 @@ Style For Banner section
     bottom: -38px;
     right: 38px;
 }
+
 .banner_main::after {
     position: absolute;
-    content: "";
+
     width: 50px;
     height: 40px;
     background: url(../images/cross.png);
@@ -460,6 +512,7 @@ Style For Banner section
     bottom: -38px;
     left: 38px;
 }
+
 
 /* ---------------------------------------
 
@@ -530,6 +583,7 @@ Style For The Background Text in Banner
     display: none;
 }
 
+
 /* 
 Styles for Banner image  
 */
@@ -541,11 +595,13 @@ Styles for Banner image
     overflow: hidden;
     margin: 0 auto;
 }
+
 .banner-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 
 /* ---------------------------
 
@@ -575,11 +631,14 @@ Style For Banner section Buttons
     transition: ease-in all 0.5s;
 }
 
+
 /* colors_used: var(--color-pink), #de5a5a (dark pink), 361C16 (brown)*/
+
 
 /* -------------------------------------
 =====================================
 ------------------------------------- */
+
 
 /* ---------------------------
 
@@ -600,6 +659,9 @@ Style For Card-service Section
 }
 
 
+.card-service {
+
+
 
 
 
@@ -614,6 +676,12 @@ Style For Card-service Section
     text-align: center;
     color: var(--text-color);
     border-radius: 8px;
+
+    box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+    background: var(--secondary-background-color);
+}
+
+
 
     box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
     background: var(--secondary-background-color);
@@ -640,9 +708,11 @@ Style For Card-service Section
     box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.15);
 
 }
+
 /* ------------------------------------------------
 ===============================================
 ------------------------------------------------ */
+
 
 /* ---------------------------
 
@@ -652,6 +722,73 @@ Style For Categories Section
 
 .categories {
     text-align: center;
+
+}
+
+.categories .headimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.innerimg {
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 2px 14px rgba(95, 92, 120, 0.16);
+    width: 150px;
+    height: 130px !important;
+}
+
+.first-cat {
+    background: url(../images/Leather-purse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second-cat {
+    background: url(../images/Leather-belt.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.third-cat {
+    background: url(../images/Leather-shoes.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.forth-cat {
+    background: url(../images/Leather-bags.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.fifth-cat {
+    background: url(../images/Leather-wallet.jpeg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.sixth-cat {
+    background: url(../images/Leather-gloves.jpeg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.seventh-cat {
+    background: url(../images/Leather-bagpacks.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.eighth-cat {
+    background: url(../images/Leather-caps.jpeg);
+    background-repeat: none;
+    background-size: cover;
+
     padding: 12px;
     border: solid 1px transparent;
 }
@@ -704,6 +841,7 @@ Style For Categories Section
     box-shadow: 0 2px 14px rgba(95, 92, 120, 0.16);
     width: 150px;
     height: 130px !important;
+
 }
 
 .categories h5 {
@@ -719,9 +857,11 @@ Style For Categories Section
     color: #898798;
 }
 
+
 /* --------------------------------------
 ======================================
 -------------------------------------- */
+
 
 /* ---------------------------
 
@@ -729,7 +869,9 @@ Style For About Us Section
 
 -------------------------- */
 
+
 /* Added background using css variables instead of using hardcoded value */
+
 .aboutusbtn {
     background-color: var(--color-pink);
     color: white;
@@ -747,15 +889,20 @@ Style For About Us Section
     object-fit: contain;
 }
 
+
 /* ---------------------------
 
 Style For New Arrivals Section
 
 -------------------------- */
+
+
 /* Added background using css variables instead of using hardcoded value */
+
 #arrivals {
     background-color: var(--secondary-background-color);
 }
+
 .arrival-card {
     display: block;
     margin: 0 auto;
@@ -796,15 +943,18 @@ Style For New Arrivals Section
     transition: color 0.2s ease;
 }
 
+
 /* ------------------------------------
 ====================================
 ------------------------------------ */
+
 
 /* ---------------------------
 
 Style For Customer Review section
 
 -------------------------- */
+
 .titlepage {
     text-align: center;
     padding-bottom: 60px;
@@ -915,15 +1065,18 @@ Style For Customer Review section
     display: none;
 }
 
+
 /* -----------------------------------------------
 ===============================================
 ----------------------------------------------- */
+
 
 /* ---------------------------
 
 Style For Contact Us section
 
 -------------------------- */
+
 .contact {
     padding: 115px 0 120px;
     background: url(../images/map.jpg);
@@ -932,6 +1085,7 @@ Style For Contact Us section
     background-size: cover;
     position: relative;
 }
+
 .contact:before {
     background: #482b24e7;
     position: absolute;
@@ -939,21 +1093,26 @@ Style For Contact Us section
     top: 0;
     width: 100%;
     height: 100%;
-    content: "";
+
 }
 
+
 /*contact-head */
+
 .section-header.contact-head h2,
 .section-header.contact-head p {
     position: relative;
     color: #fff;
 }
+
 .contact-form h3 {
     color: #fff;
     font-size: 24px;
     text-transform: capitalize;
     margin-bottom: 40px;
 }
+
+
 /*contact-head */
 
 .contact-content {
@@ -961,13 +1120,16 @@ Style For Contact Us section
     margin-top: 30px;
     overflow: hidden;
 }
+
 .contact-form {
     position: relative;
     margin: 50px 0 0 0;
 }
+
 .contact-form .form-group {
     margin-bottom: 15px;
 }
+
 .contact-form .form-control {
     padding: 24px 21px;
     font-size: 16px;
@@ -979,6 +1141,7 @@ Style For Contact Us section
     color: #888;
     resize: none;
 }
+
 .contact-form .form-group {
     padding-bottom: 7px;
 }
@@ -987,7 +1150,9 @@ Style For Contact Us section
     box-shadow: 0 0 15px #ff8aa5;
 }
 
+
 /*--contct button--*/
+
 .contact-form .single-contact-btn button {
     display: flex;
     align-items: center;
@@ -1028,27 +1193,35 @@ Style For Contact Us section
     border: 1px solid #361c16;
 }
 
+
 /*--contct button--*/
 
+
 /* contact-right */
+
 .contact-right {
     display: flex;
 }
 
+
 /* contact-adress */
+
 .contact-adress {
     margin: 68px 0 0px;
     display: flex;
     flex-direction: column;
 }
+
 .contact-office-address {
     margin-bottom: 18px;
 }
+
 .contact-office-address h3 {
     color: #fff;
     font-size: 24px;
     text-transform: capitalize;
 }
+
 .contact-office-address p {
     color: #fff;
     font-size: 14px;
@@ -1056,26 +1229,39 @@ Style For Contact Us section
     margin-top: 30px;
     margin-bottom: 50px;
 }
+
 .contact-online-address {
     color: #fff;
     font-size: 14px;
 }
+
 .single-online-address {
     position: relative;
     margin-bottom: 30px;
 }
+
 .single-online-address i {
     padding-right: 7px;
 }
+
 .single-online-address span {
     position: absolute;
     font-size: 14px;
     left: 25px;
     top: 0;
     width: 100%;
+
+}
+
+
+/* contact-adress */
+
+
 } /* contact-adress */
 
+
 /*hm-foot-icon*/
+
 .contact-icon {
     margin-top: 19px;
 }
@@ -1083,7 +1269,12 @@ Style For Contact Us section
 .contact-icon ul li {
     float: left;
 }
+
+
+.contact-icon ul li>a {
+
 .contact-icon ul li > a {
+
     color: #fff;
     margin-right: 13px;
     padding: 0px 12px 0px 0px;
@@ -1097,7 +1288,12 @@ Style For Contact Us section
 .contact-icon ul li {
     float: left;
 }
+
+
+.contact-icon ul li>a {
+
 .contact-icon ul li > a {
+
     color: #ff8aa5;
     margin-right: 13px;
     padding: 0px 12px 0px 0px;
@@ -1113,9 +1309,11 @@ Style For Contact Us section
 }
 
 
+
 /* ------------------------------------
 ====================================
 ------------------------------------ */
+
 
 /* ---------------------------
 
@@ -1161,7 +1359,8 @@ ul.social_icon li {
 }
 
 ul.social_icon li a {
-    background: #fff;
+    background-color: #ffffff;
+    color: #000000cc;
     width: 40px;
     height: 40px;
     display: flex;
@@ -1170,13 +1369,23 @@ ul.social_icon li a {
     font-size: 25px;
     border-radius: 30px;
     margin: 0 3px;
+
+    /* transition: 0s; */
+
     transition: 0s;
     transition: all 400ms ease;
+
 }
 
 ul.social_icon li .fa a:hover {
     background-color: var(--color-pink-dark);
+
+    color: white !important;
+    /* opacity: 1; */
+    /* transition: .3s; */
+
     color: #fff;
+
 }
 
 
@@ -1216,7 +1425,11 @@ ul.social_icon li .fa a:hover {
     color: #fff;
     padding: 5px 0px;
     max-width: 147px;
+
+    border-radius: 6px;
+
     border-radius: 10px;
+
     width: 100%;
     display: block;
     font-weight: 500;
@@ -1225,7 +1438,11 @@ ul.social_icon li .fa a:hover {
 }
 
 .sub_btn:hover {
+
+ 
+
     background-color: #000;
+
     transition: ease-in all 0.5s;
     color: #fff;
 }
@@ -1254,9 +1471,11 @@ ul.social_icon li .fa a:hover {
     transition: all 400ms ease;
 }
 
+
 /* ------------------------------------
 ====================================
 ------------------------------------ */
+
 
 /* ---------------------------
 
@@ -1271,10 +1490,17 @@ Style For page-section
     color: #898798;
     overflow: hidden;
 }
+
 .title-section {
     color: #65443c;
     font-size: 2rem;
+
+}
+
+.subhead {
+
 }.subhead {
+
     display: block;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -1292,6 +1518,7 @@ Style For page-section
     border-radius: 40px;
     background-color: var(--color-pink);
 }
+
 
 /* ---------------------------
 
@@ -1326,10 +1553,13 @@ Style for toggle theme button
     display: block;
 }
 
+
 /* Adding custom scroolbar  matching to the theme of website */
+
 ::-webkit-scrollbar {
     width: 20px;
 }
+
 ::-webkit-scrollbar-track {
     background-color: rgb(247, 252, 254);
 }
@@ -1339,6 +1569,9 @@ Style for toggle theme button
     border-radius: 1rem;
     border: 0.3rem solid transparent;
     background-clip: content-box;
+
+}
+
 }
 /* for back to scroll feature  */
 /* 
@@ -1368,4 +1601,5 @@ Style for toggle theme button
 .fa {
     font-size: 16px;
 }
+
 
