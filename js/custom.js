@@ -26,7 +26,6 @@ $(function () {
 
     scrollProgressBar.style.width = `${scrollPercentage}%`
 
-    console.log(Math.round(scrollPercentage))
   })
 
   /* Tooltip
