@@ -12,7 +12,7 @@
 .loder img{
   height: 50vh;
 }
-/*................ styleing the modal ........ */
+/*................ styling the modal ........ */
 .modal-buy{
   position: fixed;
   z-index: 1000 !important;
@@ -41,7 +41,7 @@
 .modal-buy .product img{
   width: 40vw;
 }
-/* for dynamically genered calass test in product .js */
+/* for dynamically generated class test in product .js */
 .modal-buy .product .productBuyDescription p{
   width: 50vw;
   font-size: 22px;
@@ -74,14 +74,14 @@
 .active-modal{
   scale: 1;
 }
-/* ...............styleing the header  .................  */
+/* ...............styling the header  .................  */
 header {
   background-image: url(../images/banner4.png);
   height: 60vh;
 }
 
 
-/* ...............styleing the Main body starts.................  */
+/* ...............styling the Main body starts.................  */
 main {
   transform: translateY(-30vh);
   position: relative;
@@ -166,4 +166,4 @@ main {
 .products_card_l .product_details .price{
     color: black;
 }
-/* ...............styleing the Main body starts.................  */
+/* ...............styling the Main body starts.................  */

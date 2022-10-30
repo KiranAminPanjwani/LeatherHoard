@@ -1,10 +1,10 @@
-/* ...............styleing the header  .................  */
+/* ...............styling the header  .................  */
 header {
   background-image: url(../images/banner4.png);
   height: 60vh;
 }
 
-/* ...............styleing the Main body starts.................  */
+/* ...............styling the Main body starts.................  */
 .hidden{
     opacity: 0;
     transition: 1.5s ease;
