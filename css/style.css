@@ -761,6 +761,12 @@ Style For New Arrivals Section
   scale: 1.05;
 }
 
+.arrival-card:hover {
+    max-width: 300px;
+    max-height: 400px;
+    transition: 0.5s;
+  }
+
 .arrival-card .arrival_picture {
   display: flex;
   justify-content: center;
