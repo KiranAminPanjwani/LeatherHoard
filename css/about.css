@@ -46,6 +46,17 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+.section3 .stats-holder .stats .stats-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.section3 .stats-holder .stats .stats-counter span {
+    font-size: 30px;
+}
+.section3 .stats-holder .stats div b {
+    font-size: 18px;
+}
 .section3 h1{
     font-size: 50px;
 }
