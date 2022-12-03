@@ -95,7 +95,7 @@
 @media (min-width: 576px) and (max-width: 767px) {
     .text-bg h1 {
         font-size: 70px;
-        line-height: 40px;
+        line-height: 65px;
         padding-bottom: 25px;
     }
     #banner1 .carousel-inner {
