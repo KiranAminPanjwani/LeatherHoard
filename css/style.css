@@ -176,7 +176,8 @@ button {
   align-items: center;
 }
 
-.loader-wrapper {
+
+/* .loader-wrapper {
   width: 200px;
   height: 60px;
   position: relative;
@@ -192,7 +193,7 @@ button {
   left: 15%;
   transform-origin: 50%;
   animation: circle7124 0.5s alternate infinite ease;
-}
+} */
 
 @keyframes circle7124 {
   0% {
