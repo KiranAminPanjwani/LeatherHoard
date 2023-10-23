@@ -1,144 +1,143 @@
 /* ----------------Account-Page ---------- */
 .account-page {
-    /* border: 2px solid white; */
-    width: 60vw;
-
+  /* border: 2px solid white; */
+  width: 60vw;
 }
 
 .form-container {
-    /* border: 5px solid rgb(13, 13, 13); */
-    border-radius: 10px;
-    background: #fff;
-    width: 300px;
-    height: 450px;
-    margin: 0 150px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    /*  to hide one form login or register */
+  /* border: 5px solid rgb(13, 13, 13); */
+  border-radius: 10px;
+  background: #fff;
+  width: 300px;
+  height: 450px;
+  margin: 0 150px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /*  to hide one form login or register */
 }
 
 .form-container span {
-    margin: 5px 0px;
-    font-weight: bold;
-    font-size: medium;
-    padding: 0 10px;
-    color: #555;
-    cursor: pointer;
-    width: 100px;
-    display: inline-block;
+  margin: 5px 0px;
+  font-weight: bold;
+  font-size: medium;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
 }
 
 .form-btn {
-    display: inline-block;
+  display: inline-block;
 }
 
 .btn {
-    display: inline-block;
-    background-color: #64362f;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 30px 0px;
-    border-radius: 30px;
-    transition: background 0.5s;
-    /* border: 2px solid black; */
+  display: inline-block;
+  background-color: #64362f;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0px;
+  border-radius: 30px;
+  transition: background 0.5s;
+  /* border: 2px solid black; */
+}
+
+.btn:hover {
+  color: rgb(251, 67, 0);
 }
 
 .form-container form {
-    max-width: 300px;
-    padding: 0 20px;
-    position: absolute;
-    top: 130px;
-    transition: transform 1s;
-
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
 }
 
 form input {
-    width: 100%;
-    height: 30px;
-    margin: 10px 0;
-    padding: 0 10px;
-    border: 1px solid #999;
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #999;
 }
 
 form .btn {
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    margin: 15px 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 15px 0;
 }
 
 form .btn:focus {
-    outline: none;
-    /*focus use when when click on button then border show but outline ::none hide the borderoutlint  */
+  outline: none;
+  /*focus use when when click on button then border show but outline ::none hide the borderoutlint  */
 }
 
 #LoginForm {
-    left: -300px;
-
+  left: -300px;
 }
 
 #RegForm {
-    left: 0;
+  left: 0;
 }
 
 form a {
-    font-size: 12px;
+  font-size: 12px;
 }
-
 
 #Indicator {
-    width: 100px;
-    border: none;
-    background: #64362f;
-    height: 3px;
-    margin: 9px;
-    transform: translateX(100px);
+  width: 100px;
+  border: none;
+  background: #64362f;
+  height: 3px;
+  margin: 9px;
+  transform: translateX(100px);
 }
-#Indicator{
-    width: 80px;
-    border:none;
-    background:#64362f;
-    height: 3px;
-    margin-left: 5px;
-    margin-top: -5px;
-    transform: translateX(110px);
-    transition: transform 1s;
-
+#Indicator {
+  width: 80px;
+  border: none;
+  background: #64362f;
+  height: 3px;
+  margin-left: 5px;
+  margin-top: -5px;
+  transform: translateX(110px);
+  transition: transform 1s;
 }
-
-
 
 /*------ offer------ */
-.offer{
-    background-color: #996b64;
+.offer {
+  background-color: #996b64;
 }
 .offer .row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.jacket
-{
-    width: 30%;
-
+.jacket {
+  width: 30%;
 }
 .offertext {
-    width: 30%;
+  width: 30%;
+}
+.offertext p {
+  text-align: center;
+  padding: 12px;
+  font-size: 20px;
+  color: #d2cfcf;
+}
+.offertext h1 {
+  text-align: center;
+  font-size: 45px;
+  color: #64362f;
+}
+.offertext a {
+  display: flex;
+  justify-content: center;
+}
 
-}
-.offertext p{
-    text-align: center;
-    padding: 12px;
-    font-size: 20px;
-    color: #d2cfcf;
-}
-.offertext h1{
-    text-align: center;
-    font-size: 45px;
-    color: #64362f;
-}
-.offertext a
-{
-    display: flex;
-    justify-content: center;
+#LoginForm a{
+
+color: red;
+
 }
