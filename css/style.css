@@ -772,10 +772,13 @@ Style For New Arrivals Section
   box-shadow: 0 2px 6px rgba(100, 95, 136, 0.16);
   overflow: hidden;
   background: var(--secondary-background-color);
+  transition: transform 0.3s, background-color 0.3s, transform-origin top;
 }
 .arrival-card:hover {
   cursor: pointer;
-  scale: 1.05;
+  scale: 1.2;
+  background-color: rgba(199, 95, 54, 0.5);
+  border-radius: 1rem;
 }
 
 .arrival-card .arrival_picture {
